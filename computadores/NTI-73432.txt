@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-73432
+Patrimonio       : 73432
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : cedmac shift
+Entidade         : HB 2 C
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 94:C6:91:4F:6F:0C
+Endereco IP      : 172.20.103.166
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67611
+Patrimonio       : 67611
+CPU              : Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 38:D5:47:7D:71:3B
+Endereco IP      : 172.30.62.30
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

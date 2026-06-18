@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-73554
+CPU              : 
+Placa-mae        :  
+GPU              : 
+Memoria RAM      : 0 GB
+Discos Rigidos   : 
+Endereco MAC     : 
+Endereco IP      : 
+Edicao Windows   : 
+Local            : SALA 14
+

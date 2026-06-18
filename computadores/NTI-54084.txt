@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-54084
+Patrimonio       : 77132
+CPU              : Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz
+Local            : apoio
+Entidade         : LAB
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 15.81 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 00:40:A7:2F:78:98
+Endereco IP      : 172.30.57.86
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

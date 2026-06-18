@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-73528
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 94:C6:91:4F:6E:C1
+Endereco IP      : 172.30.15.56
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : Sala 3 73528
+

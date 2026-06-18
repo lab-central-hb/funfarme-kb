@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-45116
+Patrimonio       : 45116
+CPU              : Intel(R) Core(TM) i3-6100 CPU @ 3.70GHz
+Local            : tralma shift
+Entidade         : HB 2 B
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 530
+Memoria RAM      : 7.92 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 78:F2:9E:F7:E5:D0
+Endereco IP      : 172.30.46.12
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

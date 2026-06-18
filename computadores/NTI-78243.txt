@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-78243
+Patrimonio       : 78243
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 A
+Placa-mae        :  
+GPU              : NVIDIA GeForce 210 
+Memoria RAM      : 7.94 GB
+Discos Rigidos   : SATA SSD - 223.57 GB
+Endereco MAC     : D4:5D:64:34:B2:53
+Endereco IP      : 172.30.61.157
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

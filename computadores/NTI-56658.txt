@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-56658
+Patrimonio       : 56658
+CPU              : Intel(R) Core(TM) i3-4170 CPU @ 3.70GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 B
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : 4C:CC:6A:4D:EA:F4
+Endereco IP      : 172.30.48.65
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

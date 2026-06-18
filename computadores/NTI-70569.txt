@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-70569
+Patrimonio       : 70569
+CPU              : 
+Local            : espermograma
+Entidade         : 
+Placa-mae        :  
+GPU              : 
+Memoria RAM      : 0 GB
+Discos Rigidos   : 
+Endereco MAC     : 
+Endereco IP      : 
+Edicao Windows   : 
+
+

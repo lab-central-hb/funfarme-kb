@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68082
+Patrimonio       : 68082
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 4 C
+Placa-mae        :  
+GPU              : NVIDIA GeForce GT 710
+Memoria RAM      : 7.97 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9D:38
+Endereco IP      : 172.30.34.26
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

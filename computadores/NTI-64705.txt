@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-64705
+CPU              : Intel(R) Core(TM) i3-4170 CPU @ 3.70GHz
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 4C:CC:6A:4D:EB:68
+Endereco IP      : 172.21.10.89
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : HB SS RADIOTERAPIA
+

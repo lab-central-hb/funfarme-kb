@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-47324
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : AMD Radeon HD 7700 Series
+Memoria RAM      : 15.95 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : 50:46:5D:CE:B9:A8
+Endereco IP      : 172.30.27.32
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : HB TOMOGRAFIA COMANDO
+

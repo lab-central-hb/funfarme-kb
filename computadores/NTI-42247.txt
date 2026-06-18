@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-42247
+Patrimonio       : 42247
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Local            : tralma shift
+Entidade         : HB 2 B
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 10:78:D2:BE:AB:D0
+Endereco IP      : 172.30.46.38
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

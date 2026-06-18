@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-88024
+Patrimonio       : 88024
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : uti sus shift
+Entidade         : HB 7 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.79 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7B:8F:C2
+Endereco IP      : 172.30.64.25
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

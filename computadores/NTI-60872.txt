@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-60872
+CPU              : Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 64:1C:67:79:BD:78
+Endereco IP      : 172.30.104.80
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : Ambulatorio Oftalmo Sala 11
+

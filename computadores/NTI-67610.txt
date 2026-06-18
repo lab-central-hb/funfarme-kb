@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67610
+Patrimonio       : 67610
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 C
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.7 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB ATA Device - 223.58 GB
+Endereco MAC     : 08:60:6E:F4:BF:17
+Endereco IP      : 172.30.35.131
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

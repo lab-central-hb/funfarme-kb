@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-91165
+Patrimonio       : 91165
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : cedmac shift
+Entidade         : HB 2 C
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.83 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 08:BF:B8:01:AD:0D
+Endereco IP      : 172.20.103.146
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

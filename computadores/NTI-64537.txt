@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-64537
+CPU              : Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : NVIDIA GeForce GT 730
+Memoria RAM      : 15.94 GB
+Discos Rigidos   : Generic- xD-Picture - 0 GB
+                 Generic- MS/MS-PRO - 0 GB
+                 WD Green 2.5 240GB - 223.57 GB
+                 Generic- Compact Flash - 0 GB
+                 Generic- SD/MMC - 0 GB
+Endereco MAC     : 28:F1:0E:FC:D5:C8
+Endereco IP      : 172.30.27.141
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : HB T Tomografia Command Center
+

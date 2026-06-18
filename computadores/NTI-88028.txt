@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-88028
+Patrimonio       : 88028
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : enfermagem shift
+Entidade         : HB 3 C
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.82 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7B:92:77
+Endereco IP      : 172.30.33.30
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

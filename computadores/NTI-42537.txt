@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-42537
+Patrimonio       : 42537
+CPU              : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+Local            : UTI ilha solitaria
+Entidade         : HB 4
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 10:78:D2:BE:AC:F7
+Endereco IP      : 172.30.61.124
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-055146
+Patrimonio       : 055146
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Local            : uti sus shift
+Entidade         : HB 7 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : EC:A8:6B:B9:02:4D
+Endereco IP      : 172.30.64.95
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-103846
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.75 GB
+Discos Rigidos   : SWG512G-114HI - 476.94 GB
+Endereco MAC     : 60:CF:84:D0:71:6A
+Endereco IP      : 172.30.15.122
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : Sala 8 103846
+

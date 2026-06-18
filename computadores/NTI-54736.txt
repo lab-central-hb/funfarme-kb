@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-54736
+Patrimonio       : 54736
+CPU              : Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.69 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : D8:50:E6:E7:AE:A5
+Endereco IP      : 172.30.61.167
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-70557
+Patrimonio       : 70557
+CPU              : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Local            : enfermagem sus shift
+Entidade         : HB 3 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.66 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 70:85:C2:7B:36:DD
+Endereco IP      : 172.30.60.45
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

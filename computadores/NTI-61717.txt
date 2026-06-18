@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-61717
+Patrimonio       : 61717
+CPU              : Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz
+Local            : Guiche 15
+Entidade         : Ambulatori
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 64:1C:67:78:90:99
+Endereco IP      : 172.30.108.97
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

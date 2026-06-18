@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-45114
+Patrimonio       : 45114
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : Lexar SSD - 238.47 GB
+Endereco MAC     : 00:E0:FF:68:1C:3B
+Endereco IP      : 172.30.61.147
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

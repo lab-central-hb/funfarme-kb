@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-70619
+Patrimonio       : 70619
+CPU              : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Local            : Triagem
+Entidade         : LAB
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.86 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : E0:D5:5E:79:A5:2B
+Endereco IP      : 172.30.57.139
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

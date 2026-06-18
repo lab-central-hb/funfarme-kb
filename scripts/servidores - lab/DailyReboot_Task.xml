@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!--
+  Task Scheduler definition for DailyReboot.ps1
+  Import via: Task Scheduler > Action > Import Task...
+  OR via PowerShell:
+      Register-ScheduledTask -Xml (Get-Content ".\DailyReboot_Task.xml" -Raw) -TaskName "DailyReboot"
+
+  BEFORE IMPORTING:
+    1. Update <Arguments> with the actual path to DailyReboot.ps1
+    2. Update <UserId> with an administrator account
+-->
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Reboot my personal PC at 03:30.</Description>
+    <Author>Pedro Santana</Author>
+  </RegistrationInfo>
+
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2026-05-07T03:30:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByDay>
+        <DaysInterval>1</DaysInterval>
+      </ScheduleByDay>
+    </CalendarTrigger>
+  </Triggers>
+
+  <Principals>
+    <Principal id="Author">
+      <!-- Must be an administrator to run shutdown and msg commands -->
+      <UserId>hbase\pedro.santana</UserId>
+      <LogonType>Password</LogonType>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <ExecutionTimeLimit>PT10M</ExecutionTimeLimit>  <!-- Enough for 5min + 1min + reboot -->
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <StartWhenAvailable>false</StartWhenAvailable>  <!-- Don't run if it missed its window -->
+    <WakeToRun>false</WakeToRun>
+  </Settings>
+
+  <Actions Context="Author">
+    <Exec>
+      <Command>powershell.exe</Command>
+      <!-- UPDATE THIS PATH -->
+      <Arguments>-NonInteractive -NoProfile -ExecutionPolicy Bypass -File "D:\santana\scripts\DailyReboot.ps1"</Arguments>
+    </Exec>
+  </Actions>
+</Task>

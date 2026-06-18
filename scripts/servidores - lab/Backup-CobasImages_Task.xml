@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!--
+  Task Scheduler definition for Backup-CobasImages.ps1
+  Import via: Task Scheduler > Action > Import Task...
+  OR via PowerShell:
+      Register-ScheduledTask -Xml (Get-Content ".\Backup-CobasImages_Task.xml" -Raw) -TaskName "Backup-CobasImages"
+
+  BEFORE IMPORTING:
+    1. Update <Command> and <Arguments> to reflect the actual script path on your server.
+    2. Update <UserId> with the Windows account that should run the task
+       (use a service account with write access to both source and destination folders).
+    3. The task is configured to run every Monday at 02:00. Adjust <StartBoundary>
+       and <DaysOfWeek> if you prefer a different schedule.
+-->
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Moves Cobas 6500 microscopy images to monthly backup folders weekly.</Description>
+    <Author>Pedro Santana</Author>
+  </RegistrationInfo>
+
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2026-05-11T02:00:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByWeek>
+        <WeeksInterval>1</WeeksInterval>
+        <DaysOfWeek>
+          <Sunday />   <!-- Change to <Sunday />, <Wednesday />, etc. if needed -->
+        </DaysOfWeek>
+      </ScheduleByWeek>
+    </CalendarTrigger>
+  </Triggers>
+
+  <Principals>
+    <Principal id="Author">
+      <!-- Replace with the account that has access to D:\Shift\ -->
+      <UserId>hbase\pedro.santana</UserId>
+      <LogonType>Password</LogonType>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>  <!-- Abort if still running after 1 hour -->
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <WakeToRun>false</WakeToRun>
+    <StartWhenAvailable>true</StartWhenAvailable>  <!-- Runs on next login if it missed its window -->
+  </Settings>
+
+  <Actions Context="Author">
+    <Exec>
+      <Command>powershell.exe</Command>
+      <!-- UPDATE THIS PATH to wherever you saved the .ps1 file -->
+      <Arguments>-NonInteractive -NoProfile -ExecutionPolicy Bypass -File "D:\Shift\scripts\Backup-CobasImages.ps1"</Arguments>
+    </Exec>
+  </Actions>
+</Task>

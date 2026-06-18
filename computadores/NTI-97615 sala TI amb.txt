@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+Nome PC          : NTI-97615
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Placa-mae        : ASUSTeK COMPUTER INC. PRIME H510M-K R2.0
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 15.83 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 10:7C:61:A5:06:70
+Endereco IP      : 172.30.15.66
+Edicao Windows   : Microsoft Windows 10 Pro
+

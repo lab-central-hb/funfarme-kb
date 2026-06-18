@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-88430
+CPU              : Intel(R) Core(TM) i3-10100 CPU @ 3.60GHz
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.79 GB
+Discos Rigidos   : KINGSTON SA400M8240G - 223.57 GB
+Endereco MAC     : 50:EB:F6:37:47:E6
+Endereco IP      : 172.30.20.164
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : LUCY I Cond Fisico
+

@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-84432
+Patrimonio       : 84432
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : Biomol
+Entidade         : HB 1 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.79 GB
+Discos Rigidos   : SanDisk Cruzer Blade USB Device - 14.6 GB
+                 KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7A:E7:9A
+Endereco IP      : 172.30.57.226
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

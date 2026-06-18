@@ -1,0 +1,16 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-92626
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.79 GB
+Discos Rigidos   : ST1000LM049-2GH172 - 931.51 GB
+                 ADATA LEGEND 710 - 476.94 GB
+Endereco MAC     : 04:7C:16:D0:68:28, 00:FF:F1:D7:3C:0D
+Endereco IP      : 192.168.15.98, 10.20.200.34
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : Nucleo Contratacoes
+

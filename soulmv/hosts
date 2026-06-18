@@ -1,0 +1,65 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# Este é um arquivo HOSTS de exemplo usado pelo Microsoft TCP/IP para Windows.
+#
+# Este arquivo contém os mapeamentos de endereços IP para nomes de host. Cada
+# entrada deve ser mantida em uma linha individual. O endereço IP deve
+# ser colocado na primeira coluna, seguido do nome de host correspondente.
+# O endereço IP e o nome do host devem ser separados por pelo menos um
+# espaço.
+#
+# Adicionalmente, comentários (como estes) podem ser inseridos em linhas
+# individuais ou após o nome de computador indicado por um símbolo '#'.
+#
+# Por exemplo:
+#
+#      102.54.94.97     rino.acme.com           # servidor de origem
+#       38.25.63.10     x.acme.com              # host cliente x
+
+127.0.0.1       localhost
+172.17.0.88     srv-dlc10
+172.17.0.18     srv-dlc10b
+172.17.0.12     srvprogress
+172.17.0.42     srv-stdby01.hbase.local
+172.17.9.13     HB-35122
+
+# SERVIDOR DE BANCOS SH, CONVENIO, ETC
+172.17.0.63     SRV-PRGHBIS01
+
+172.17.0.64     SRV-PRGHBIS02
+
+
+##############################################################################################
+##########				HBSJRP								##############
+##############################################################################################
+##########				PACS								##############
+172.17.160.100		hbsjrppacszglb1							#Zonaglobal PACSDB
+172.17.160.120		hbsjrppacszglb1_alom					#ALOM Zonaglobal PACSDB
+172.17.160.101		hbsjrppacsdb							#Pacs DB
+172.17.160.102		hbsjrptmpwfm							#Workflow Manager Temp
+172.17.160.103		hbsjrppacszglb2							#Zonaglobal PACSWFM
+172.17.160.123		hbsjrppacszglb2							#ALOM Zonaglobal WFM
+172.17.160.104		hbsjrppacswfm							#Workflow Manager
+172.17.160.105		hbsjrppacsvm							#VMWare ESXi PACS
+172.17.160.106		hbsjrppacscas.hbase		hbsjrppacscas	#Application Server
+172.17.160.107		hbsjrppacsics.hbase		hbsjrppacsics	#Curator
+172.17.160.108		hbsjrppacscm.hbase		hbsjrppacscm	#Connectivity Manager
+##############################################################################################
+##############################################################################################
+##########				RIS									##############
+172.17.160.201		hbsjrprisdb								#RIS DataBase
+172.17.160.221		hbsjrprisdb_alom						#ALOM RISDataBase
+172.17.160.202		hbsjrprisvm								#VMWare ESXi RIS
+172.17.160.206		hbsjrprisvm2							#VMWare ESXi RIS
+172.17.160.203		hbsjrprisintin							#Interfaces Inbound
+172.17.160.204		hbsjrprisintout							#Interfaces Outbound
+172.17.160.205		hbsjrprisspeech							#Speech Sever
+172.17.160.207		hbsjrpspeech							#Speech Sever
+##############################################################################################
+##############################################################################################
+
+172.17.0.23             srv-ora01
+
+127.0.0.1 genuine.microsoft.com
+127.0.0.1 mpa.one.microsoft.com
+127.0.0.1 sls.microsoft.com

@@ -1,0 +1,15 @@
+﻿===============================
+ SYSTEM INFORMATION REPORT
+===============================
+
+Device Name      : NTI-70607
+CPU              : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Motherboard      : ASRock H310M-HDV
+GPU              : Intel(R) UHD Graphics 630
+MAC Address(es)  : 70:85:C2:7B:35:79
+IP Address(es)   : 172.30.76.22
+Windows Edition  : Microsoft Windows 10 Pro
+AnyDesk ID       : 493551404
+
+Generated on     : 11/04/2025 14:45:46
+===============================

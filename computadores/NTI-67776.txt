@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67776
+Patrimonio       : 67776
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : uti sus shift
+Entidade         : HB 7 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : WDC WD5000AAKX-00U6AA0 ATA Device - 465.76 GB
+Endereco MAC     : B8:97:5A:F1:9D:02
+Endereco IP      : 172.30.64.22
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

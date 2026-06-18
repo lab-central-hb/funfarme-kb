@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-77078
+Patrimonio       : 77078
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : WDC WDS240G2G0B-00EPW0 - 223.57 GB
+Endereco MAC     : A8:5E:45:A3:E9:EE
+Endereco IP      : 172.30.62.47
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

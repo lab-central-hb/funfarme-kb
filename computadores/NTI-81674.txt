@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMAÇÕES DO SISTEMA
+===============================
+
+Nome PC          : NTI-81674
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Placa-mãe        : ASUSTeK COMPUTER INC. PRIME H310M-E R2.0/BR
+GPU              : Intel(R) UHD Graphics 630
+Memória RAM      : 7.87 GB
+Discos Rígidos   : KINGSTON SA400S37240G — 223.57 GB
+Endereço MAC     : 3C:7C:3F:79:0D:ED
+Endereço IP      : 172.30.37.14
+Edição Windows   : Microsoft Windows 10 Pro
+

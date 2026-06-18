@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-103890
+Patrimonio       : 103890
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Local            : Guiche 3
+Entidade         : Farmacia Alto Custo
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.75 GB
+Discos Rigidos   : SWG512G-114HI - 476.94 GB
+Endereco MAC     : 60:CF:84:D0:71:69
+Endereco IP      : 172.20.250.19
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

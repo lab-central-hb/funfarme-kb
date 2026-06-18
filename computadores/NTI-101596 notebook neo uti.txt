@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+Nome PC          : NTI-101596
+CPU              : 12th Gen Intel(R) Core(TM) i5-12450H
+Placa-mae        : ADL Ganymede_ADU
+GPU              : Intel(R) UHD Graphics
+Memoria RAM      : 7.71 GB
+Discos Rigidos   : SM2P41C8-256GC5 - 238.47 GB
+Endereco MAC     : 0C:CC:47:ED:55:F1
+Endereco IP      : 172.30.69.150
+Edicao Windows   : Microsoft Windows 11 Pro
+

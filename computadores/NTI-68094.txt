@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68094
+Patrimonio       : 68094
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 4 C
+Placa-mae        :  
+GPU              : AMD Radeon HD 5450
+Memoria RAM      : 7.97 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9D:7A
+Endereco IP      : 172.30.34.14
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

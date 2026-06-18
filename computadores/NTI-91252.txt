@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-91252
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 15.83 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 08:BF:B8:35:A2:FC
+Endereco IP      : 172.30.41.13
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : HB SS Hotelaria
+

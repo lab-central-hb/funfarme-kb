@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-91246
+Patrimonio       : 91246
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : Governancia Clinica
+Entidade         : HB T
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.83 GB
+Discos Rigidos   : ST3500413AS - 465.76 GB
+                 SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 08:BF:B8:35:AF:92
+Endereco IP      : 172.30.55.104
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

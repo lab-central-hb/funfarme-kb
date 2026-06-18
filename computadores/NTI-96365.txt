@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-96365
+Patrimonio       : 96365
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : Sala de Laudos Radiologia
+Entidade         : HCM SS
+Placa-mae        :  
+GPU              : NVIDIA GeForce RTX 4070 SUPER
+Memoria RAM      : 15.9 GB
+Discos Rigidos   : SanDisk SSD Plus 250GB A3N - 232.88 GB
+Endereco MAC     : E8:9C:25:5F:96:6D
+Endereco IP      : 172.30.66.145
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

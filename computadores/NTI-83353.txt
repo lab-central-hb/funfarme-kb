@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-83353
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Placa-mae        :  
+GPU              : Parsec Virtual Display Adapter, NVIDIA GeForce 210 
+Memoria RAM      : 7.94 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 3C:7C:3F:7A:59:11
+Endereco IP      : 172.30.87.8
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : NTI
+

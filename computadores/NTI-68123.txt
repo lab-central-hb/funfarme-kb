@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68123
+Patrimonio       : 68123
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 4 C
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9B:9F
+Endereco IP      : 172.30.34.13
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

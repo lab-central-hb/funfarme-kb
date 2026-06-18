@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-76805
+CPU              : Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : NVIDIA GeForce GT 710
+Memoria RAM      : 15.98 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB ATA Device - 223.57 GB
+Endereco MAC     : 00:E0:4C:68:1E:38
+Endereco IP      : 172.30.87.46
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : FF Contabilidade
+

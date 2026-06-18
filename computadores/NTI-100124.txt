@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-100124
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 7.75 GB
+Discos Rigidos   : SanDisk SSD Plus 250GB A3N - 232.88 GB
+Endereco MAC     : 60:CF:84:CF:B9:B2
+Endereco IP      : 172.30.75.38
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : HCM 8 TMO 100124
+

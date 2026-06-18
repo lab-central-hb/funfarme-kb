@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-77165
+Patrimonio       : 77165
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Local            : Recepcao
+Entidade         : LAB
+Placa-mae        :  
+GPU              : AMD Radeon HD 5450
+Memoria RAM      : 7.95 GB
+Discos Rigidos   : LITEON CV8-CE256-HP - 238.47 GB
+Endereco MAC     : B4:2E:99:F4:13:34
+Endereco IP      : 172.30.57.143
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

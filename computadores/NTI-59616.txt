@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-59616
+Patrimonio       : 59616
+CPU              : Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+Local            : Emerg. SUS Cons. 8
+Entidade         : HB SS
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.58 GB
+Endereco MAC     : 74:27:EA:7E:96:55
+Endereco IP      : 172.17.113.113
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-61130
+CPU              : Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : WDC WD5000AAKX-003CA0 - 465.76 GB
+Endereco MAC     : 64:1C:67:79:A9:FD
+Endereco IP      : 172.30.65.35
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : HB 8 A Enfermagem
+

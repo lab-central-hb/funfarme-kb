@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67527
+Patrimonio       : 67527
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Local            : ortopedia shift
+Entidade         : HB 3 B
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.69 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : AC:22:0B:2D:72:A4
+Endereco IP      : 172.30.47.165
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

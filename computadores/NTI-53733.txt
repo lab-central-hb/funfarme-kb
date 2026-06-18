@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-53733
+Patrimonio       : 53733
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Local            : Recepcao G.O.
+Entidade         : HCM T
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : EC:A8:6B:B9:21:90
+Endereco IP      : 172.30.67.13
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

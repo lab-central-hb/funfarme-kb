@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-VIVO-14
+Patrimonio       : VIVO-14
+CPU              : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+Local            : Recepcao Emerg SUS
+Entidade         : HB T
+Placa-mae        :  
+GPU              : Adaptador de Vídeo Básico da Microsoft
+Memoria RAM      : 7.92 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 74:E6:E2:D1:76:49
+Endereco IP      : 172.30.90.31
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

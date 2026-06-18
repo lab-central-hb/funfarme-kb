@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67744
+Patrimonio       : 67744
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 4 C
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.84 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.58 GB
+Endereco MAC     : 54:BE:F7:88:95:6A
+Endereco IP      : 172.30.34.22
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

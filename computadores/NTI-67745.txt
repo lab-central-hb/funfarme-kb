@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67745
+Patrimonio       : 67745
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shitf
+Entidade         : HB 4 C
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.7 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : 50:46:5D:56:82:D4
+Endereco IP      : 172.30.34.21
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

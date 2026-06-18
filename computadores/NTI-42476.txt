@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-42476
+Patrimonio       : 42476
+CPU              : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+Local            : Fonoaudiologa
+Entidade         : Lucy I
+Placa-mae        :  
+GPU              : Radmin Mirror Driver V3, Intel(R) HD Graphics
+Memoria RAM      : 3.91 GB
+Discos Rigidos   : ST3500413AS ATA Device - 465.76 GB
+Endereco MAC     : 10:78:D2:BE:AB:DE
+Endereco IP      : 172.30.20.15
+Edicao Windows   : Microsoft Windows 7 Professional 
+
+

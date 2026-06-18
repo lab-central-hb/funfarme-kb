@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+Nome PC          : NTI-47605
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Placa-mae        : MEGAWARE MW-H61H2-M2
+GPU              : Radmin Mirror Driver V3 Intel(R) HD Graphics Family
+Memoria RAM      : 3.41 GB
+Discos Rigidos   : Hitachi HDS721050CLA360 - 465.76 GB
+Endereco MAC     : C8:9C:DC:C8:31:26
+Endereco IP      : 172.30.65.165
+Edicao Windows   : Microsoft Windows 7 Professional 
+

@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-56010
+CPU              : Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz
+Placa-mae        :  
+GPU              : NVIDIA GeForce 210 
+Memoria RAM      : 7.95 GB
+Discos Rigidos   : SATA SSD ATA Device - 223.57 GB
+Endereco MAC     : AC:22:0B:2E:2A:35
+Endereco IP      : 172.30.41.58
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : HB SS Radiolo Anfiteatro
+

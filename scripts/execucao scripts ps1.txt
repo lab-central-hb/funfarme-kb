@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File ".\Reset-Impressora-Etiquetas.ps1"

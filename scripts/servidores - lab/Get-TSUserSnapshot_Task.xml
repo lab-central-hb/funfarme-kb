@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<!--
+  Task Scheduler definition for Get-TSUserSnapshot.ps1
+  Import via: Task Scheduler > Action > Import Task...
+  OR via PowerShell:
+      Register-ScheduledTask -Xml (Get-Content ".\Get-TSUserSnapshot_Task.xml" -Raw) -TaskName "Get-TSUserSnapshot"
+
+  BEFORE IMPORTING:
+    1. Update <Arguments> with the actual path to the .ps1 file.
+    2. Update <UserId> with an administrator account (needed for Get-Process -IncludeUserName).
+-->
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Hourly snapshot of logged-in Terminal Server users with RAM, state, idle and logon time.</Description>
+    <Author>IT</Author>
+  </RegistrationInfo>
+
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>2026-05-12T00:00:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <Repetition>
+        <Interval>PT1H</Interval>       <!-- Every 1 hour -->
+        <StopAtDurationEnd>false</StopAtDurationEnd>
+      </Repetition>
+    </TimeTrigger>
+  </Triggers>
+
+  <Principals>
+    <Principal id="Author">
+      <!-- Must be an administrator — required for Get-Process -IncludeUserName -->
+      <UserId>hbase\pedro.santana</UserId>
+      <LogonType>Password</LogonType>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <ExecutionTimeLimit>PT5M</ExecutionTimeLimit>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <StartWhenAvailable>true</StartWhenAvailable>
+  </Settings>
+
+  <Actions Context="Author">
+    <Exec>
+      <Command>powershell.exe</Command>
+      <!-- UPDATE THIS PATH -->
+      <Arguments>-NonInteractive -NoProfile -ExecutionPolicy Bypass -File "C:\scripts\Get-TSUserSnapshot.ps1"</Arguments>
+    </Exec>
+  </Actions>
+</Task>

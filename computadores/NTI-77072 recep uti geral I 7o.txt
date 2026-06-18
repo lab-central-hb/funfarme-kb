@@ -1,0 +1,15 @@
+﻿===============================
+   informações do sistema
+===============================
+
+Nome PC          : NTI-77072
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+RAM              : 7.87 GB
+Placa-mãe        : ASUSTeK COMPUTER INC. PRIME H310M-E R2.0/BR
+GPU              : Intel(R) UHD Graphics 630
+MAC              : A8:5E:45:A3:E9:CB
+IP               : 172.30.64.55
+Edição Windows   : Microsoft Windows 10 Pro
+
+Gerado dia       : 11/04/2025 17:00:13
+===============================

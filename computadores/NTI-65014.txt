@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-65014
+Patrimonio       : 65014
+CPU              : Intel(R) Core(TM) i3-6100 CPU @ 3.70GHz
+Local            : Operacionais
+Entidade         : HB SS
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 530
+Memoria RAM      : 7.92 GB
+Discos Rigidos   : TOSHIBA DT01ACA050 - 465.76 GB
+Endereco MAC     : 78:F2:9E:F7:D6:EF
+Endereco IP      : 172.30.87.216
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

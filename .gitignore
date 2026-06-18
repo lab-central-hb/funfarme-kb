@@ -1,0 +1,5 @@
+*.exe
+drivers/
+install/
+profissional/
+tools/

@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-45087
+Patrimonio       : 45087
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Local            : Trauma Presc Med
+Entidade         : HB 2 B
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : C8:9C:DC:C6:08:D9
+Endereco IP      : 172.30.46.28
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

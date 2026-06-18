@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-86318
+Patrimonio       : 86318
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : Eng. Clinica
+Entidade         : HB SS
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.79 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7B:92:82
+Endereco IP      : 172.20.100.134
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

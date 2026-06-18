@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68084
+Patrimonio       : 68084
+CPU              : Intel(R) Core(TM) i3-3250 CPU @ 3.50GHz
+Local            : enfermagem sus shift
+Entidade         : HB 6 C
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9B:B8
+Endereco IP      : 172.30.36.38
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

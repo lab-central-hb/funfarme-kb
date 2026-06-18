@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-78242
+Patrimonio       : 78242
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Local            : UTI exterior
+Entidade         : HB 4
+Placa-mae        :  
+GPU              : NVIDIA GeForce 210 
+Memoria RAM      : 7.94 GB
+Discos Rigidos   : SATA SSD - 223.57 GB
+Endereco MAC     : D4:5D:64:34:8C:26
+Endereco IP      : 172.30.61.164
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

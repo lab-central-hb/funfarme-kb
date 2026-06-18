@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-102032
+Patrimonio       : 102032
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Local            : enfermegem sus shift
+Entidade         : HB 3 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.75 GB
+Discos Rigidos   : KINGSTON SNV3S500G - 465.76 GB
+Endereco MAC     : 60:CF:84:D0:2B:C7
+Endereco IP      : 172.30.60.10
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

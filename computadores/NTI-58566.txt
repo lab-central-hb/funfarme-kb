@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-58566
+CPU              : Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics 4400
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : KINGSTON SA400S37240G ATA Device - 223.57 GB
+Endereco MAC     : 74:27:EA:7E:89:51
+Endereco IP      : 172.30.15.69
+Edicao Windows   : Microsoft Windows 10 Pro
+Local            : SALA 19
+

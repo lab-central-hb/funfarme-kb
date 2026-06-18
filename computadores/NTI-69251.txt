@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-69251
+Patrimonio       : 69251
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Local            : UTI
+Entidade         : HB 4
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.58 GB
+Endereco MAC     : 74:27:EA:78:E3:84
+Endereco IP      : 172.30.61.129
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

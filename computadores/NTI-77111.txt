@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-77111
+Patrimonio       : 77111
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : enfermagem sus shift
+Entidade         : HB 3 A
+Placa-mae        :  
+GPU              : NVIDIA GeForce GT 710, Intel(R) UHD Graphics 630
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : WDC WDS240G2G0B-00EPW0 - 223.57 GB
+Endereco MAC     : A8:5E:45:A3:D6:29
+Endereco IP      : 172.30.60.93
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

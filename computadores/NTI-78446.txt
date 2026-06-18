@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-78446
+Patrimonio       : 78446
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 C
+Placa-mae        :  
+GPU              : NVIDIA GeForce G210 
+Memoria RAM      : 7.95 GB
+Discos Rigidos   : EASYMEMORY480GB - 447.13 GB
+Endereco MAC     : B4:2E:99:F4:25:B6
+Endereco IP      : 172.30.35.19
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-42547
+Patrimonio       : 42547
+CPU              : Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz
+Local            : Transplantes
+Entidade         : HB 8 D
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics, Radmin Mirror Driver V3
+Memoria RAM      : 7.81 GB
+Discos Rigidos   : KINGSTON SA400S37 240GB - 223.57 GB
+                 ST3500413AS - 465.76 GB
+Endereco MAC     : 00:40:A7:2F:78:9F
+Endereco IP      : 172.30.65.84
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

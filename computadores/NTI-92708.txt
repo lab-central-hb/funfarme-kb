@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-92708
+Patrimonio       : 92708
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Local            : enfermagem sus shift
+Entidade         : HB 6 B
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.79 GB
+Discos Rigidos   : ST1000LM049-2GH172 - 931.51 GB
+                 ADATA LEGEND 710 - 476.94 GB
+Endereco MAC     : 04:7C:16:D0:68:88
+Endereco IP      : 172.30.50.56
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

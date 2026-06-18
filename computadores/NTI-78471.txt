@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-78471
+Patrimonio       : 78471
+CPU              : Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 A
+Placa-mae        :  
+GPU              : NVIDIA GeForce G210 
+Memoria RAM      : 15.95 GB
+Discos Rigidos   : EASYMEMORY480GB - 447.13 GB
+Endereco MAC     : B4:2E:99:F4:22:CF
+Endereco IP      : 172.30.61.30
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

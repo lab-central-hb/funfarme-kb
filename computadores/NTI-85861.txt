@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-85861
+Patrimonio       : 85861
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : dip sus shift
+Entidade         : HB 2 B
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.82 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7B:8D:F7
+Endereco IP      : 172.30.46.30
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

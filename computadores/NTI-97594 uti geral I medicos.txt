@@ -1,0 +1,15 @@
+﻿===============================
+   informações do sistema
+===============================
+
+Nome PC          : NTI-97594
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+RAM              : 7.83 GB
+Placa-mãe        : ASUSTeK COMPUTER INC. PRIME H510M-K R2.0
+GPU              : Intel(R) UHD Graphics 630
+MAC              : 10:7C:61:A4:CD:3F
+IP               : 172.30.64.79
+Edição Windows   : Microsoft Windows 10 Pro
+
+Gerado dia       : 11/04/2025 17:20:04
+===============================

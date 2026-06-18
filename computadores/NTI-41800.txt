@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-41800
+Patrimonio       : 41800
+CPU              : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+Local            : centro integrado de pesquisa Shift
+Entidade         : HB 2 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 10:78:D2:B4:B9:95
+Endereco IP      : 172.18.40.50
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

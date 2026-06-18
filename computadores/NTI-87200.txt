@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-87200
+Patrimonio       : 87200
+CPU              : Intel(R) Celeron(R) CPU  J1800  @ 2.41GHz
+Local            : Rampa Azul
+Entidade         : Ambulatorio
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : E0:D5:5E:F1:C4:0B
+Endereco IP      : 172.30.108.22
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

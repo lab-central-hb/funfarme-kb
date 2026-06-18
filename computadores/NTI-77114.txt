@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-77114
+Patrimonio       : 77114
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : UTI fundo esquerda
+Entidade         : HB 4
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : WDC WDS240G2G0B-00EPW0 - 223.58 GB
+Endereco MAC     : A8:5E:45:A3:E9:91
+Endereco IP      : 172.30.61.131
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

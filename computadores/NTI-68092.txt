@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68092
+Patrimonio       : 68092
+CPU              : Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9C:F0
+Endereco IP      : 172.30.62.33
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

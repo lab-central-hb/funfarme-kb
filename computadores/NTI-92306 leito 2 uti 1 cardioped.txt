@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+Nome PC          : NTI-92306
+CPU              : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Placa-mae        : TGL Camellia_TL
+GPU              : Intel(R) Iris(R) Xe Graphics
+Memoria RAM      : 7.78 GB
+Discos Rigidos   : NVMe IM2P33F8ABR2-256GB - 238.47 GB
+Endereco MAC     : BC:EC:A0:EA:05:A1
+Endereco IP      : 172.30.82.138
+Edicao Windows   : Microsoft Windows 11 Pro
+

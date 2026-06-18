@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : HB-41799
+Patrimonio       : 41799
+CPU              : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+Local            : centro de integração e pesquisa shift
+Entidade         : HB 2 A
+Placa-mae        :  
+GPU              : Radmin Mirror Driver V3, Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : WDC WDS240G2G0A-00JH30 ATA Device - 223.58 GB
+Endereco MAC     : 10:78:D2:B4:C4:2A
+Endereco IP      : 172.18.40.10
+Edicao Windows   : Microsoft Windows 7 Professional 
+
+

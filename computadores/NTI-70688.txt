@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-70688
+Patrimonio       : 70688
+CPU              : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Local            : UTI fundo direita
+Entidade         : HB 4
+Placa-mae        :  
+GPU              : Radmin Mirror Driver V3, Intel(R) UHD Graphics 630
+Memoria RAM      : 7.86 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : E0:D5:5E:79:A5:52
+Endereco IP      : 172.30.61.48
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

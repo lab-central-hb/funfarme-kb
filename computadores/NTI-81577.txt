@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-81577
+Patrimonio       : 81577
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : uti sus shift
+Entidade         : HB 7 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : 3C:7C:3F:79:0C:EB
+Endereco IP      : 172.30.64.46
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

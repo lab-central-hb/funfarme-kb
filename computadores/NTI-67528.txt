@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-67528
+CPU              : Intel(R) Core(TM) i3-4170 CPU @ 3.70GHz
+Placa-mae        :  
+GPU              : AMD Radeon HD 5450, Radmin Mirror Driver V3
+Memoria RAM      : 3.95 GB
+Discos Rigidos   : WDC WD5002ABYS-02B1B SCSI Disk Device - 465.76 GB
+Endereco MAC     : 4C:CC:6A:D0:3A:82
+Endereco IP      : 172.30.13.41
+Edicao Windows   : Microsoft Windows 7 Professional 
+Local            : AMB RHC
+

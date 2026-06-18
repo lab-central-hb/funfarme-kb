@@ -1,0 +1,15 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68165
+CPU              : Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+Placa-mae        :  
+GPU              : AMD Radeon HD 5450
+Memoria RAM      : 7.97 GB
+Discos Rigidos   : KINGSTON SA400S37 240GB ATA Device - 223.57 GB
+Endereco MAC     : B8:97:5A:F1:9D:BB
+Endereco IP      : 172.30.15.17
+Edicao Windows   : Microsoft Windows 11 Pro
+Local            : anfiteatro
+

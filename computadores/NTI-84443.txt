@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-84443
+Patrimonio       : 84443
+CPU              : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Local            : sorologia
+Entidade         : LAB
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.79 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : FC:34:97:7A:E7:22
+Endereco IP      : 172.30.57.80
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

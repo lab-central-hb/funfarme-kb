@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-70585
+Patrimonio       : 0585
+CPU              : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Local            : Radiologia
+Entidade         : HB SS
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 15.66 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 70:85:C2:7B:36:56
+Endereco IP      : 172.30.43.15
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

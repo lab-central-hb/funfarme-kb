@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-73481
+Patrimonio       : 73481
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : enfermargem sus shift
+Entidade         : HB 5 C
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 94:C6:91:4F:65:E7
+Endereco IP      : 172.30.35.119
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

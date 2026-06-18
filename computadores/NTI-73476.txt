@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-73476
+Patrimonio       : 73476
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : enfermaria sus shift
+Entidade         : HB 3 A
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.87 GB
+Discos Rigidos   : KINGSTON SA400S37120G - 111.79 GB
+Endereco MAC     : 3C:7C:3F:7B:BD:E8
+Endereco IP      : 172.30.60.59
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

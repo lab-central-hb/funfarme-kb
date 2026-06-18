@@ -1,0 +1,1 @@
+\\172.17.0.56\mv2000\ti\Navegador\las-update-installer-2.2.6-full.exe -q

@@ -1,0 +1,19 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-92682
+Patrimonio       : 92682
+CPU              : 12th Gen Intel(R) Core(TM) i5-12400
+Local            : Estacionamento
+Entidade         : FF
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 730
+Memoria RAM      : 15.79 GB
+Discos Rigidos   : ST1000LM049-2GH172 - 931.51 GB
+                 ADATA LEGEND 710 - 476.94 GB
+Endereco MAC     : 04:7C:16:D0:67:D8
+Endereco IP      : 172.30.20.68
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

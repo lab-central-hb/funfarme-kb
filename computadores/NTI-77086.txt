@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-77086
+Patrimonio       : 77086
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Local            : enfermaria sus shift
+Entidade         : HB 4 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : C8:9C:DC:C6:07:C6
+Endereco IP      : 172.30.61.180
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

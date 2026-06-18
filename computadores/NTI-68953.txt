@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-68953
+Patrimonio       : 68953
+CPU              : Intel(R) Core(TM) i3-3250 CPU @ 3.50GHz
+Local            : enfermagen sus shift
+Entidade         : HB 3 A
+Placa-mae        :  
+GPU              : Intel(R) HD Graphics
+Memoria RAM      : 7.91 GB
+Discos Rigidos   : ST500DM002-1BD142 - 465.76 GB
+Endereco MAC     : 00:E0:4C:52:5C:F2
+Endereco IP      : 172.30.60.83
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

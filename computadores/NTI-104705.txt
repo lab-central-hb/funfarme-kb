@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-104705
+Patrimonio       : 104705
+CPU              : Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz
+Local            : enfermagem sus shift
+Entidade         : HB 5 C
+Placa-mae        :  
+GPU              : Intel(R) UHD Graphics 630
+Memoria RAM      : 7.88 GB
+Discos Rigidos   : SanDisk SSD PLUS 240GB - 223.57 GB
+Endereco MAC     : 94:C6:91:4F:6D:F7
+Endereco IP      : 172.30.35.42
+Edicao Windows   : Microsoft Windows 11 Pro
+
+

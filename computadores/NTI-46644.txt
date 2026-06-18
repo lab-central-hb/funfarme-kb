@@ -1,0 +1,18 @@
+﻿===============================
+   INFORMACOES DO SISTEMA
+===============================
+
+NTI              : NTI-46644
+Patrimonio       : 46644
+CPU              : Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+Local            : tralma shift
+Entidade         : HB 2 B
+Placa-mae        :  
+GPU              : Radmin Mirror Driver V3, Intel(R) HD Graphics
+Memoria RAM      : 7.9 GB
+Discos Rigidos   : KINGSTON SA400S37240G - 223.57 GB
+Endereco MAC     : C8:9C:DC:C8:34:D6
+Endereco IP      : 172.30.46.14
+Edicao Windows   : Microsoft Windows 10 Pro
+
+

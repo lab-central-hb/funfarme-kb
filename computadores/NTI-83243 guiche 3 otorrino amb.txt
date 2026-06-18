@@ -1,0 +1,14 @@
+﻿===============================
+   INFORMAÇÕES DO SISTEMA
+===============================
+
+Nome PC          : NTI-83243
+CPU              : Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+Placa-mãe        : ASUSTeK COMPUTER INC. PRIME H310M-E R2.0/BR
+GPU              : NVIDIA GeForce G210 
+Memória RAM      : 7.94 GB
+Discos Rígidos   : KINGSTON SA400S37240G — 223.57 GB
+Endereço MAC     : 3C:7C:3F:7A:59:98
+Endereço IP      : 172.30.100.33
+Edição Windows   : Microsoft Windows 10 Pro
+
