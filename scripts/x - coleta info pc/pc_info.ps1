@@ -1,5 +1,5 @@
 # pc_info.ps1
-# coleta informacoes do pc e envia para \\nti-102856\d$\santana\computadores\
+# coleta informacoes do pc e envia para \\nti-102856\d$\santana\funfarme-kb\docs\inventario\
 
 $NTI = $env:COMPUTERNAME
 $CPUArray = (Get-WmiObject Win32_Processor).Name
@@ -43,7 +43,7 @@ Edicao Windows   : $OS
 
 "@
 
-$Path = "\\nti-102856\d$\santana\computadores\$NTI.txt"
+$Path = "\\nti-102856\d$\santana\funfarme-kb\docs\inventario\$NTI.txt"
 $info | Out-File -Encoding UTF8 $Path
 
 # Funcao para converter hashtable em JSON (compativel com PowerShell 2.0)
@@ -96,7 +96,7 @@ if (Get-Command ConvertTo-Json -ErrorAction SilentlyContinue) {
 }
 
 # Salva JSON no diretorio compartilhado para processamento
-$jsonFolder = "\\nti-102856\d$\santana\scripts\x - coleta info pc\jsonData"
+$jsonFolder = "\\nti-102856\d$\santana\funfarme-kb\scripts\x - coleta info pc\jsonData"
 if (-not (Test-Path $jsonFolder)) {
     New-Item -ItemType Directory -Path $jsonFolder -Force | Out-Null
 }

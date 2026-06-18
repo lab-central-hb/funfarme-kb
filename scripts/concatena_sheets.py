@@ -9,7 +9,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # Configuracoes
-JSON_FOLDER = r"\\nti-102856\d$\santana\computadores\jsonData"
+JSON_FOLDER = r"\\nti-102856\d$\santana\funfarme-kb\scripts\x - coleta info pc\jsonData"
 PROCESSED_FOLDER = os.path.join(JSON_FOLDER, "processed")
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 CREDENTIALS_FILE = "inventario-funfarme-1e52ec7966d9.json"

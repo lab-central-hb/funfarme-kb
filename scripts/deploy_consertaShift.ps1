@@ -2,7 +2,7 @@
 # CONFIGURACAO
 # ================================
 
-$SourceFile = "\\nti-102856\d$\santana\scripts\Conserta Shift.bat"
+$SourceFile = "\\nti-102856\d$\santana\funfarme-kb\scripts\Conserta Shift.bat"
 $DestinationSubPath = "c$\Users\Public\Desktop"
 
 # Computadores

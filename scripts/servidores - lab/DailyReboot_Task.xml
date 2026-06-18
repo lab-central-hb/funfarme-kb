@@ -49,7 +49,7 @@
     <Exec>
       <Command>powershell.exe</Command>
       <!-- UPDATE THIS PATH -->
-      <Arguments>-NonInteractive -NoProfile -ExecutionPolicy Bypass -File "D:\santana\scripts\DailyReboot.ps1"</Arguments>
+      <Arguments>-NonInteractive -NoProfile -ExecutionPolicy Bypass -File "D:\santana\funfarme-kb\scripts\servidores - lab\DailyReboot.ps1"</Arguments>
     </Exec>
   </Actions>
 </Task>

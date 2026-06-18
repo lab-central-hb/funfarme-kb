@@ -16,7 +16,7 @@ echo.
 mkdir %DEST% 2>nul
 
 echo Coletando impressoras e unidades mapeadas...
-powershell -ExecutionPolicy Bypass -NoProfile -File "\\nti-102856\d$\santana\scripts\x - coleta info pc\info_backup.ps1" -DestFolder %DEST%
+powershell -ExecutionPolicy Bypass -NoProfile -File "\\nti-102856\d$\santana\funfarme-kb\scripts\x - coleta info pc\info_backup.ps1" -DestFolder %DEST%
 
 echo Copiando Area de Trabalho...
 robocopy "%ACTIVE_PROFILE%\Desktop" %DEST%\Desktop /E
