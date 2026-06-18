@@ -43,7 +43,7 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
   - `\\192.168.20.44\ImagensCobasI` (usuário: `administrator`, senha: `Vs20HB19#`)
   - `\\192.168.20.44\ImagensCobasII` (usuário: `administrator`, senha: `Vs20HB19#`)
 
-### 3.3 SRV-RS — Terminal Server
+### 3.3 SRV-TS — Terminal Server
 - **Função:** Acesso remoto ao sistema SoulMV para colaboradores de municípios vizinhos.
 - **IP:** `10.10.10.124`
 - **Acesso:** Via SophosVPN + Remote Desktop com credenciais individuais (`nome.sobrenome@hbase.local`)
@@ -53,6 +53,12 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
   - `C:\scripts\DailyReboot.ps1` — reinicia o servidor diariamente às 23h30 com avisos de 5 e 1 minuto
   - `C:\scripts\TSUserSnapshots_YYYY-MM.csv` — CSV mensal gerado pelo snapshot
 
+### 3.4 SRV-TS02 — Terminal Server
+- **Função:** Acesso remoto ao sistema SoulMV para colaboradores de municípios vizinhos.
+- **IP:** `10.10.10.125`
+- **Acesso:** Via SophosVPN + Remote Desktop com credenciais individuais (`nome.sobrenome@hbase.local`)
+- **Acesso administrativo:** Restrito a Pedro Santana e equipe de redes.
+- **Scripts em produção:**
 ---
 
 ## 4. Equipamentos Laboratoriais
@@ -95,7 +101,6 @@ Sistema LIS principal do laboratório. Composto por 5 módulos, dos quais utiliz
 | Shift LIS | LIS | Configuração de exames, procedimentos, recipientes, amostras, usuários e regras de resultados |
 | Shift Automação | Automação | Configuração dos exames interfaceados com os equipamentos; recebe resultados e os envia ao LIS |
 | Shift Integração | Integração | Integração de dados entre SoulMV e Shift LIS |
-| Shift View | View | ⚠️ *Pendente — descrição a detalhar* |
 | Shift BI | BI | Relatórios e visualizações de dados; usado pelo gerente de qualidade e administrativo |
 
 **Fluxo de resultados:**
@@ -119,8 +124,8 @@ Sistema LIS principal do laboratório. Composto por 5 módulos, dos quais utiliz
 | Script | Servidor | Função | Agendamento |
 |---|---|---|---|
 | `Backup-CobasImages.ps1` | SRV-AUTOMA | Move pastas de imagens dos Cobas para backup mensal | Semanal (segunda, 02h00) |
-| `Get-TSUserSnapshot.ps1` | SRV-RS | Snapshot horário de sessões ativas + RAM | A cada 1 hora |
-| `DailyReboot.ps1` | SRV-RS | Reinício diário com avisos aos usuários | Diário, 23h30 |
+| `Get-TSUserSnapshot.ps1` | SRV-TS | Snapshot horário de sessões ativas + RAM | A cada 1 hora |
+| `DailyReboot.ps1` | SRV-TS | Reinício diário com avisos aos usuários | Diário, 23h30 |
 
 ---
 
@@ -195,7 +200,7 @@ Kit de trabalho pessoal de TI.
 
 | Subpasta / Arquivo | Função |
 |---|---|
-| `servidores - lab\` | XMLs de Task Scheduler + PowerShell: reboot diário SRV-RS, snapshot de usuários TS, backup imagens Cobas |
+| `servidores - lab\` | XMLs de Task Scheduler + PowerShell: reboot diário SRV-TS, snapshot de usuários TS, backup imagens Cobas |
 | `x - coleta info pc\` | Inventário de PCs: `pc_info.ps1`, `concatena_sheets.py`, `requirements.txt`, JSON de amostra, runners silenciosos |
 | `x - licensas\` | Wrapper em torno de `massgrave.ps1` — usar apenas em conformidade com política e legislação |
 | Root (scripts avulsos) | Helpers AnyDesk, backup remoto, limpeza de temp, sincronização de relógio, instalação LAS, reparo Edge/HBIS/WMI, deploy Shift, mapeamento de disco, reset de rede, reboot, `gdistro.ps1` |
