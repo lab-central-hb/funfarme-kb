@@ -2,7 +2,7 @@
 
 Base de conhecimento de TI do laboratório da **FUNFARME** (Fundação Faculdade Regional de Medicina) — São José do Rio Preto, SP.
 
-Repositório privado mantido por Pedro Santana (Analista de TI).
+Repositório privado mantido por Pedro Santana (Assistente de TI).
 
 ## Estrutura
 
