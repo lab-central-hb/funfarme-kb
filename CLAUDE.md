@@ -15,13 +15,18 @@ Todas as respostas e documentos em **português brasileiro**.
 Leia os arquivos locais antes de responder perguntas técnicas. Não invente informações sobre o ambiente.
 
 ```
-./docs/ambiente.md       # Infraestrutura, servidores, sistemas, equipe, inventário
+./docs/ambiente.md       # Infraestrutura, servidores, sistemas, equipe
 ./docs/tarefas.md        # Backlog de TI
+./docs/inventario/       # Inventário de PCs da rede (~255 arquivos .txt por hostname)
 ./docs/sistemas/         # Guias por sistema (Shift LIS, SoulMV, etc.)
 ./docs/equipamentos/     # Manuais e configurações de equipamentos laboratoriais
-./docs/procedimentos/    # SOPs, onboarding, checklists
+./docs/procedimentos/    # SOPs, onboarding, checklists, soluções documentadas
 ./docs/incidentes/       # Registro de incidentes e resoluções
 ./reports/               # Relatórios mensais e semanais
+./scripts/               # Scripts de manutenção e automação
+./shift/                 # Material Shift: dados, rotas, docs contratuais, relatórios
+./documentos/            # Docs administrativos (custódia, patrimônio)
+./toolkit/               # Ferramentas: drivers, instaladores, ícones, utilitários
 ```
 
 ## Regras
