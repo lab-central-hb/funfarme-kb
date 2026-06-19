@@ -27,6 +27,7 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 ./shift/                 # Material Shift: dados, rotas, docs contratuais, relatórios
 ./documentos/            # Docs administrativos (custódia, patrimônio)
 ./toolkit/               # Ferramentas: drivers, instaladores, ícones, utilitários
+./staging/               # Dados brutos para processar (planilhas, CSVs, etc.)
 ```
 
 ## Regras
