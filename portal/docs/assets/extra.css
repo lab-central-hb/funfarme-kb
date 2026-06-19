@@ -1,0 +1,25 @@
+/* Cards de navegação na home */
+.md-typeset .grid.cards > ul > li {
+  border-left: 3px solid var(--md-primary-fg-color);
+}
+
+/* Status badges */
+.status-aberta {
+  color: #e53935;
+  font-weight: 600;
+}
+
+.status-andamento {
+  color: #fb8c00;
+  font-weight: 600;
+}
+
+.status-concluida {
+  color: #43a047;
+  font-weight: 600;
+}
+
+.status-agendada {
+  color: #1e88e5;
+  font-weight: 600;
+}

@@ -1,0 +1,103 @@
+site_name: "TI Laboratório — FUNFARME"
+site_description: "Portal de conhecimento de TI do Laboratório da FUNFARME"
+site_author: "Pedro Santana"
+site_url: "https://lab-central-hb.github.io/funfarme-kb/"
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: pt-BR
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    logo: material/flask-outline
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: pt
+
+extra:
+  generator: false
+
+copyright: "&copy; 2026 TI Laboratório — FUNFARME"
+
+nav:
+  - Início: index.md
+  - Infraestrutura:
+    - Visão Geral: infraestrutura/visao-geral.md
+    - Servidores: infraestrutura/servidores.md
+    - Equipamentos: infraestrutura/equipamentos.md
+  - Sistemas:
+    - Shift LIS: sistemas/shift-lis.md
+    - Shift Automação: sistemas/shift-automacao.md
+    - Shift Integração: sistemas/shift-integracao.md
+    - SoulMV: sistemas/soulmv.md
+    - Fluxo de Resultados: sistemas/fluxo-resultados.md
+  - Tarefas:
+    - tarefas/index.md
+    - "Junho 2026": tarefas/2026-06.md
+    - "Maio 2026": tarefas/2026-05.md
+    - "Abril 2026": tarefas/2026-04.md
+    - "Março 2026": tarefas/2026-03.md
+    - "Fevereiro 2026": tarefas/2026-02.md
+    - "Janeiro 2026": tarefas/2026-01.md
+  - Relatórios:
+    - relatorios/index.md
+    - "Junho 2026": relatorios/2026-06.md
+  - Scripts: scripts/catalogo.md
+  - Equipe: equipe/index.md
+  - Municípios: municipios/index.md
+  - Procedimentos:
+    - procedimentos/index.md
