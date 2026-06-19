@@ -10,6 +10,7 @@
 <!-- formato: - [ ] [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
 - [x] [Municípios] Votuporanga — instalar sistema Shift na cidade — *aberta em 2026-05-27* (agendado para 01/06)
+- [ ] [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
 - [ ] [Shift LIS] Máscara C216 — novo procedimento, enviar e-mail — *aberta em 2026-04-13*
 - [ ] [Shift LIS] Máscara RECALCRE — pegar laudo referência com apoio (resp. Kauã) — *aberta em 2026-03-02*
 - [ ] [Shift LIS] Máscara IGE I5 — enviar e-mail (resp. Kauã) — *aberta em 2026-03-11*
@@ -111,6 +112,7 @@
 - [x] [Shift LIS] Máscara PEPI — *concluída em 2026-06-17*
 - [x] [Shift LIS] Máscara COQ10 (resp. Kauã) — *concluída em 2026-06-17*
 - [x] [Shift LIS] Máscara DOEIMU — *concluída em 2026-06-18*
+- [x] [Shift Automação] ABL-800 — interface do gasômetro do HCM configurada para incorporar resultados de hemoglobinas — *concluída em 2026-06-18*
 
 ### Abril 2026
 
