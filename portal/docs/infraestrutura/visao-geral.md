@@ -19,6 +19,9 @@ O laboratório utiliza os seguintes servidores:
 | **SRV-AUTOMA** | Interfaceamento dos equipamentos com o Shift (CachéITF) | Windows Server 2016 |
 | **SRV-TS** | Acesso remoto ao SoulMV para municípios | Windows Server |
 | **SRV-TS02** | Segundo servidor de acesso remoto ao SoulMV | Windows Server |
+| **AQURE** | Servidor AQURE | — |
+
+Outros dispositivos: Impressora Diretoria (`172.30.57.9`), Painel HLab, Painel Lab (`172.30.57.30`).
 
 Para detalhes de cada servidor, consulte a página [Servidores](servidores.md).
 
@@ -32,6 +35,8 @@ O laboratório possui equipamentos interfaceados com o Shift Automação nas seg
 | Bioquímica / Imunologia | Cobas PRO I |
 | Sorologias | Cobas PRO II |
 | Hematologia | STA COMPACT MAX, STA R MAX, XN 3100, XN 1000, XN 550 |
+| Gasometria | ABL-800 FLEX |
+| Eletrólitos | MAX ION 800 |
 | Microbiologia / Biomolecular | Documentação pendente |
 
 Para detalhes, consulte a página [Equipamentos](equipamentos.md).

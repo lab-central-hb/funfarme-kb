@@ -22,3 +22,5 @@ A integração de um novo município envolve:
 3. **Configuração de rede** — criação de VPN (Sophos) e regras de acesso ao Terminal Server
 4. **Instalação** — instalação do sistema Shift e impressora de etiquetas na unidade
 5. **Validação** — teste de acesso remoto e funcionamento do sistema
+
+Para o procedimento detalhado de instalação, consulte [Instalação Shift em Municípios](../procedimentos/instalacao-municipios.md).

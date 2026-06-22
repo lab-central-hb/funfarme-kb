@@ -2,6 +2,17 @@
 
 O Shift LIS (Laboratory Information System) é o sistema principal do laboratório, desenvolvido pela empresa **Shift (Pulsa pela Vida)**.
 
+## Links de Acesso
+
+| Sistema | URL |
+|---------|-----|
+| **LIS** | `hb.shiftcloud.com.br/main/app` |
+| **Etiquetas Lab** | `hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls` |
+| **Resultados de Exames** | `hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO\\&sigla` |
+| **Integração** | `integracao.shiftcloud.com.br/shift/integracao/hospitaldebase/mv/s00.iu.Menu.cls` |
+| **Automação** | `automacao.hospitaldebase.com.br/shift/automacao/hospbase/s00.iu.Menu.cls` |
+| **P-512 (local)** | `192.168.20.91:57774/shift/integracao/hb/cobas/s00.iu.Login.cls` |
+
 ## Função
 
 Gerencia todo o ciclo do exame laboratorial:
@@ -31,6 +42,22 @@ Uma **máscara** é o layout do laudo de um exame. Define:
 - Formatação visual do laudo
 
 A criação de máscaras é uma das atividades mais frequentes da equipe de TI — cada novo exame ou alteração de layout exige configuração no Shift LIS e espelhamento no SoulMV.
+
+Para o procedimento completo, consulte [Criação de Máscara](../procedimentos/index.md).
+
+### Máscaras em PDF — Erro de Exportação
+
+Os seguintes procedimentos utilizam campo PDF e causam erro no relatório de exportação:
+
+| Código Shift | Código SoulMV |
+|-------------|---------------|
+| 2247 | — |
+| 1245 | 232 |
+| 2299 | 741 |
+| 2037 | — |
+| 2321 | — |
+| 2189 | — |
+| 1629 | — |
 
 ## Hospedagem
 

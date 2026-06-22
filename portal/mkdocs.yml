@@ -101,3 +101,4 @@ nav:
   - Municípios: municipios/index.md
   - Procedimentos:
     - procedimentos/index.md
+    - Instalação em Municípios: procedimentos/instalacao-municipios.md

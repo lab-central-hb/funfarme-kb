@@ -56,13 +56,21 @@ Este portal reúne informações operacionais sobre infraestrutura, sistemas, eq
 
     [:octicons-arrow-right-24: Ver municípios](municipios/index.md)
 
+- :material-wrench:{ .lg .middle } **Procedimentos**
+
+    ---
+
+    Guias operacionais, troubleshooting e checklists de instalação.
+
+    [:octicons-arrow-right-24: Ver procedimentos](procedimentos/index.md)
+
 </div>
 
 ---
 
 ## Status Rápido
 
-!!! info "Atualizado em 19/06/2026"
+!!! info "Atualizado em 22/06/2026"
 
     | Indicador | Valor |
     |-----------|-------|
