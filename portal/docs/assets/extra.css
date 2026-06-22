@@ -212,7 +212,8 @@
 
 body.auth-locked .md-header,
 body.auth-locked .md-tabs,
-body.auth-locked .md-container,
+body.auth-locked .md-sidebar,
+body.auth-locked .md-footer,
 body.auth-locked .md-banner,
 body.auth-locked .md-dialog,
 body.auth-locked .md-top,
