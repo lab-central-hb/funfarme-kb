@@ -29,6 +29,8 @@ Portal interno de TI — Laboratório FUNFARME
 (function(){
   var HASH = "666d0266e18651a8f4abb4a2f914fcd1fc5376d5d150048b22f8271a2ce93f14";
   var KEY  = "funfarme_auth";
+  var LAST = "funfarme_last_activity";
+  var TIMEOUT = 7 * 60 * 1000;
 
   async function sha256(str) {
     var buf = await crypto.subtle.digest("SHA-256",
@@ -37,9 +39,24 @@ Portal interno de TI — Laboratório FUNFARME
       .map(function(b){ return b.toString(16).padStart(2,"0"); }).join("");
   }
 
+  function touch() { sessionStorage.setItem(LAST, Date.now()); }
+
+  function isExpired() {
+    var t = sessionStorage.getItem(LAST);
+    return !t || (Date.now() - Number(t)) > TIMEOUT;
+  }
+
+  function logout() {
+    sessionStorage.removeItem(KEY);
+    sessionStorage.removeItem(LAST);
+    showLogin();
+  }
+
   function showContent() {
     document.getElementById("auth-gate").style.display = "none";
     document.getElementById("page-content").style.display = "";
+    touch();
+    startIdleTimer();
   }
 
   function showLogin() {
@@ -47,10 +64,25 @@ Portal interno de TI — Laboratório FUNFARME
     document.getElementById("page-content").style.display = "none";
   }
 
-  if (sessionStorage.getItem(KEY) === HASH) {
+  var idleTimer;
+  function startIdleTimer() {
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(logout, TIMEOUT);
+  }
+
+  ["mousemove","keydown","click","scroll","touchstart"].forEach(function(evt){
+    document.addEventListener(evt, function(){
+      if (sessionStorage.getItem(KEY) === HASH) {
+        touch();
+        startIdleTimer();
+      }
+    });
+  });
+
+  if (sessionStorage.getItem(KEY) === HASH && !isExpired()) {
     showContent();
   } else {
-    showLogin();
+    logout();
   }
 
   document.getElementById("auth-form").addEventListener("submit", async function(e) {
