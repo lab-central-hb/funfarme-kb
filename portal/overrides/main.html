@@ -5,21 +5,19 @@ Portal interno de TI — Laboratório FUNFARME
 {% endblock %}
 
 {% block content %}
-<div id="auth-gate" style="display:none">
-  <div class="auth-overlay">
-    <div class="auth-card">
-      <div class="auth-icon">🔒</div>
-      <h2>Portal TI — FUNFARME</h2>
-      <p>Acesso restrito. Informe suas credenciais.</p>
-      <form id="auth-form" autocomplete="off">
-        <label for="auth-user">Usuário</label>
-        <input id="auth-user" type="text" autocomplete="off" required>
-        <label for="auth-pass">Senha</label>
-        <input id="auth-pass" type="password" autocomplete="off" required>
-        <div id="auth-error" style="display:none">Credenciais inválidas.</div>
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
+<div id="auth-gate" class="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <div class="auth-icon">🔒</div>
+    <h2>Portal TI — FUNFARME</h2>
+    <p>Acesso restrito. Informe suas credenciais.</p>
+    <form id="auth-form" autocomplete="off">
+      <label for="auth-user">Usuário</label>
+      <input id="auth-user" type="text" autocomplete="off" required>
+      <label for="auth-pass">Senha</label>
+      <input id="auth-pass" type="password" autocomplete="off" required>
+      <div id="auth-error" style="display:none">Credenciais inválidas.</div>
+      <button type="submit">Entrar</button>
+    </form>
   </div>
 </div>
 <div id="page-content" style="display:none">
@@ -53,6 +51,7 @@ Portal interno de TI — Laboratório FUNFARME
   }
 
   function showContent() {
+    document.body.classList.remove("auth-locked");
     document.getElementById("auth-gate").style.display = "none";
     document.getElementById("page-content").style.display = "";
     touch();
@@ -60,6 +59,7 @@ Portal interno de TI — Laboratório FUNFARME
   }
 
   function showLogin() {
+    document.body.classList.add("auth-locked");
     document.getElementById("auth-gate").style.display = "";
     document.getElementById("page-content").style.display = "none";
   }
