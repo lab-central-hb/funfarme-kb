@@ -3,3 +3,68 @@
 {% block announce %}
 Portal interno de TI — Laboratório FUNFARME
 {% endblock %}
+
+{% block content %}
+<div id="auth-gate" style="display:none">
+  <div class="auth-overlay">
+    <div class="auth-card">
+      <div class="auth-icon">🔒</div>
+      <h2>Portal TI — FUNFARME</h2>
+      <p>Acesso restrito. Informe suas credenciais.</p>
+      <form id="auth-form" autocomplete="off">
+        <label for="auth-user">Usuário</label>
+        <input id="auth-user" type="text" autocomplete="off" required>
+        <label for="auth-pass">Senha</label>
+        <input id="auth-pass" type="password" autocomplete="off" required>
+        <div id="auth-error" style="display:none">Credenciais inválidas.</div>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="page-content" style="display:none">
+  {{ super() }}
+</div>
+<script>
+(function(){
+  var HASH = "666d0266e18651a8f4abb4a2f914fcd1fc5376d5d150048b22f8271a2ce93f14";
+  var KEY  = "funfarme_auth";
+
+  async function sha256(str) {
+    var buf = await crypto.subtle.digest("SHA-256",
+      new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf))
+      .map(function(b){ return b.toString(16).padStart(2,"0"); }).join("");
+  }
+
+  function showContent() {
+    document.getElementById("auth-gate").style.display = "none";
+    document.getElementById("page-content").style.display = "";
+  }
+
+  function showLogin() {
+    document.getElementById("auth-gate").style.display = "";
+    document.getElementById("page-content").style.display = "none";
+  }
+
+  if (sessionStorage.getItem(KEY) === HASH) {
+    showContent();
+  } else {
+    showLogin();
+  }
+
+  document.getElementById("auth-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    var u = document.getElementById("auth-user").value;
+    var p = document.getElementById("auth-pass").value;
+    var h = await sha256(u + ":" + p);
+    if (h === HASH) {
+      sessionStorage.setItem(KEY, HASH);
+      showContent();
+    } else {
+      document.getElementById("auth-error").style.display = "";
+    }
+  });
+})();
+</script>
+{% endblock %}

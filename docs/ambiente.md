@@ -33,15 +33,15 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
 - **Função:** Interfaceamento dos equipamentos laboratoriais com o sistema Shift.
 - **IP:** `192.168.20.44`
 - **SO:** Windows Server 2016
-- **Acesso remoto:** `.\administrator` / `Vs20HB19#`
+- **Acesso remoto:** `.\administrator` / *(senha em cofre local)*
 - **Serviço hospedado:** CachéITF
 - **Diretório principal:** `D:\Shift\`
   - `D:\Shift\Dados\HOSPBASE\ImagensCobasI` — imagens de microscopia do Cobas 6500 I
   - `D:\Shift\Dados\HOSPBASE\ImagensCobasII` — imagens de microscopia do Cobas 6500 II
   - `D:\Shift\Backups ImagensCobas\` — backups mensais das imagens, organizados por ano e equipamento
 - **Compartilhamentos de rede mapeados nos Cobas:**
-  - `\\192.168.20.44\ImagensCobasI` (usuário: `administrator`, senha: `Vs20HB19#`)
-  - `\\192.168.20.44\ImagensCobasII` (usuário: `administrator`, senha: `Vs20HB19#`)
+  - `\\192.168.20.44\ImagensCobasI` (usuário: `administrator`, senha em cofre local)
+  - `\\192.168.20.44\ImagensCobasII` (usuário: `administrator`, senha em cofre local)
 
 ### 3.3 SRV-TS — Terminal Server
 - **Função:** Acesso remoto ao sistema SoulMV para colaboradores de municípios vizinhos.
