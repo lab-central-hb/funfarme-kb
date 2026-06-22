@@ -227,6 +227,10 @@ body.auth-locked {
   overflow: hidden;
 }
 
+body.auth-locked .md-content {
+  animation: none;
+}
+
 .auth-overlay {
   position: fixed;
   inset: 0;
