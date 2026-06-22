@@ -1,0 +1,745 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Guia de soluções</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2ed4e803-85ee-80c3-8001-f678dcd366e6" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🪛</span></div><h1 class="page-title" dir="auto">Guia de soluções</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="2ed4e803-85ee-8010-8c65-f5535d02366c" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="2ed4e803-85ee-80c3-8984-e55ef63c3b94" class="block-color-gray_background toggle"><li><details open=""><summary><strong>Criação de Máscara</strong></summary><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-809b-aa0d-d5ac7aa4f1d3" class="numbered-list" start="1"><li>Ir até o menu Shift LIS → Configuração → Procedimento → Máscara</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-8049-bf04-ceea27436e47" class="block-color-default_background numbered-list" start="2"><li>Selecionar o procedimento utilizando código, nome ou mnemônico</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8099-b351-f3a875d83038" class="numbered-list" start="3"><li>Para dar início a criação da máscara, clicar em “Criar máscara em elaboração”</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-80c1-868a-fbfcfaaa300b" class="block-color-default_background numbered-list" start="4"><li>Os campos “Descrição proc.” e “Descrição proc. online” serão o nome da máscara exibido. Preencher de acordo com a convenção do laboratório ou laudo de exemplo.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-805f-945e-d2f495e5aa45" class="block-color-default_background numbered-list" start="5"><li>No campo “Observações”, preencher com os seguintes dados, quando disponíveis: PDF | Laboratório | mês/ano de criação. Por exemplo: <strong><span style="border-bottom:0.05em solid">PDF Fleury 2026</span></strong> ou <strong><span style="border-bottom:0.05em solid">Pardini 06/2026</span></strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8078-bca1-ebfdda00fcab" class="numbered-list" start="6"><li>Abaixo temos a área de “Campos de máscara”. Aqui serão criados e inseridos os parâmetros e processos analíticos da máscara.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-80e7-a70f-d6b56e0c08c3" class="numbered-list" start="7"><li>No campo “Tipo do campo” é possível escolher uma entrada de dados comum, campo calculado, imagem (para gráficos). O mais comum será “entrada de dados comum”.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8073-bb5c-c00553480923" class="numbered-list" start="8"><li>Ao lado direito há uma caixa de seleção onde pode ser decidido se o campo terá impressão ou se ficará apenas visível pelo sistema (”sem impressão”).</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-80b7-bf59-e68602676903" class="numbered-list" start="9"><li>Os campos de descrição serão a forma que é exibido o parâmetro da máscara na apresentação final do laudo. Para máscaras com campo único é comum utilizar apenas “RESULTADO:” como a descrição do parâmetro.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-80cf-abf1-fa74b9b3e657" class="numbered-list numbered-list-digits-2" start="10"><li>Para criar um novo parâmetro, basta clicar no ícone de documento ao lado de “Parâmetro”.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-805d-a92d-ef897f8ed2f2" class="block-color-default_background numbered-list numbered-list-digits-2" start="11"><li>Preencher “Descrição” com uma descrição clara do parâmetro. Preencher os dois campos de “Apelido” com uma abreviação do parâmetro, que será utilizado como identificador na integração. Por exemplo, para um exame como “DEHIDROEPIANDROSTERONA SULFATO (SDHEA)”, que é feito tanto no laboratório central, quanto em laboratórios de apoio quando necessário, temos o parâmetro com apelido “SDHEA” para o resultado do nosso laboratório, porém na máscara do laboratório parceiro, o parâmetro tem apelido “SDHEApard” para especificar que este parâmetro é do laboratório Hermes Pardini. Em exames com diversos parâmetros, é essencial que cada um seja nomeado de forma inteligente para evitar erros durante a configuração de integração.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-800c-a92c-c974fb10ee91" class="block-color-default_background numbered-list numbered-list-digits-2" start="12"><li>Nos botões de rádio ao lado direito é possível escolher se o campo é obrigatório ou não. Geralmente utilizado para campos onde o resultado será apenas visto pelos analistas do laboratório ou para exames onde o número de análises/resultados é variante.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-805b-a68f-cf4d7f64fa2a" class="block-color-default_background numbered-list numbered-list-digits-2" start="13"><li>Na área de “Processo analítico”, criar um novo clicando no ícone de documento ao lado direito do campo de texto “Padrão”. Cada parâmetro tem obrigatóriamente pelo menos um processo analítico. O processo analítico é como o parâmetro se comportará em relação a formatações, valores de referência, unidades de medida.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8047-8078-c8238dd1c939" class="numbered-list numbered-list-digits-2" start="14"><li>Após clicar no ícone, uma nova página para criação do processo analítico será aberta, mas ainda é necessário clicar no botão “Novo” para criar um processo analítico.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ff4e803-85ee-8067-9149-cf02e373e8d8" class="numbered-list numbered-list-digits-2" start="15"><li>De forma similar ao parâmetro, escolher um “Apelido” e “Descrição” para o processo analítico.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-8028-9dd1-e14e093bd7bb" class="block-color-default_background numbered-list numbered-list-digits-2" start="16"><li>Na aba “Geral”, preencher com o “Método” do exame, criando um novo caso necessário.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ff4e803-85ee-8060-b125-eda08eee3973" class="numbered-list numbered-list-digits-2" start="17"><li>Em caso de exames com unidades de medida, procurar pela unidade desejada no campo “Unidade (pré-cadastrado)” para utilizar unidades já cadastradas no sistema e evitar criar novas unidades desnecessariamente.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ff4e803-85ee-80ae-98fe-e2924cda61ed" class="numbered-list numbered-list-digits-2" start="18"><li>O tipo de resultado pode ser:<div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-8059-aeb1-d6b9d8707f5e" class="numbered-list" start="1"><li>Alfanumérico: resultados de texto, geralmente com tamanho 30 ou mais.</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-8084-806f-f1e6b54b98ff" class="numbered-list" start="2"><li>Numérico: restritivo, apenas números. Geralmente para resultados de equipamentos.</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-804c-91fa-f02cbe228a0b" class="numbered-list" start="3"><li>Numérico/alfanumérico: aceita números <strong>ou </strong>letras. Muito utilizado. Para números, preencher com o tamanho necessário e com quantidade de decimais caso presentes. Por exemplo, para o número 10.1 precisamos utilizar no mínimo um tamanho “3”, com número de decimais “1”.</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-80e2-9248-cbecd9aea711" class="numbered-list" start="4"><li>Laudo: para gráficos/imagens</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-8051-9ffa-faac2ebfaf59" class="numbered-list" start="5"><li>Arquivo PDF: para exames cadastrados como campo livre no MV. Tamanho geralmente 30</li></ol></div></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8079-874f-faea61ae13e0" class="numbered-list numbered-list-digits-2" start="19"><li>Na aba “Valores de referência”, criar um “Novo valor”.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8027-93e1-eee1c229161c" class="numbered-list numbered-list-digits-2" start="20"><li>Geralmente a utilização de valores de referência não é classificada da maneira correta, e é utilizada apenas para visualização. Neste caso, temos os seguintes valores para os campos:<div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-8048-b20f-ffc5eecdc933" class="numbered-list" start="1"><li>Categoria: Humano</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-800f-93e1-ed3b855e48a4" class="numbered-list" start="2"><li>Sexo: Todos</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-80c0-94af-eab7e7d6b78e" class="numbered-list" start="3"><li>Idade inicial: 0</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-8003-9b77-d07e500aaeb8" class="numbered-list" start="4"><li>Idade final: 200</li></ol></div><div style="display:contents" dir="auto"><ol type="a" id="3874e803-85ee-80a8-96df-e1b7a8b2d5e9" class="numbered-list" start="5"><li>Tipo idade: Anos</li></ol></div><div style="display:contents" dir="auto"><p id="3874e803-85ee-80b4-b174-d077bac312d5" class="">E os valores de referência são preenchidos no campo de texto “Texto referência”.</p></div></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8005-a72c-f57fce28e4d2" class="numbered-list numbered-list-digits-2" start="21"><li>Caso o valor de referência seja necessário para classificar os resultados corretamente, de forma dinâmica, exibindo cores, avisos de resultados fora do normal, precisamos preencher as informações de forma correta. A “Categoria” continua como Humano, mas os valores de idades e sexo devem ser preenchidos conforme descrito nos valores de referência do laudo a ser seguido. Abaixo destes campos é possível colocar o intervalo dos valores de referência. Por favor procurar pela configuração de valores de referência na central de ajuda da Shift, caso necessário.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8054-b4af-f11ba412ad9f" class="numbered-list numbered-list-digits-2" start="22"><li>Após gravar os valores de referência, um processo analítico pode ter também “Notas de laudo”, onde utilizamos a fonte “Courier New”, com tamanho 8.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-80a4-b0a5-fa826035b263" class="numbered-list numbered-list-digits-2" start="23"><li>Finalizando a criação do processo analítico, clicar no botão “Salvar” e fechar a janela.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-800a-a75d-e9b6db44ea89" class="numbered-list numbered-list-digits-2" start="24"><li>Agora será possível escolher o processo analítico criado, procurando pelo apelido dele, no campo “Padrão” (descrito no item 13). Escolher o processo analítico e salvar. Fechar a janela.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-806f-ae4c-e391fc4472ee" class="numbered-list numbered-list-digits-2" start="25"><li>Voltando a tela de “Campos de máscara”, agora é possível escolher o parâmetro criado, e preencher as descrições para exibição dele. Feito isso, basta clicar no ícone “+” logo acima de “Descrição” para adicionar um parâmetro à mascara.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-80b0-bcd2-e285fb4bebf7" class="numbered-list numbered-list-digits-2" start="26"><li>Tendo adicionado todos os parâmetros necessários, salvar a máscara. Agora ela ficará disponível como uma das versões, com nome “Elaboração”.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8081-b6b2-e6c24a0b8819" class="numbered-list numbered-list-digits-2" start="27"><li>Levar uma via impressa da máscara criada para ser validada pelo profissional de Qualidade.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3874e803-85ee-8087-9481-d81389d602c9" class="numbered-list numbered-list-digits-2" start="28"><li>Para ativar a máscara, clicar em “Gerar nova versão”, e escolher se a versão será padrão ou não. (consultar com quem solicitou a criação da máscara).</li></ol></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2ee4e803-85ee-8097-95b8-c4d616adda78"/></div><div style="display:contents" dir="auto"><ul id="2ed4e803-85ee-80a8-8575-ca054f598eda" class="block-color-gray_background toggle"><li><details open=""><summary><strong>Etiquetas Shift não funciona</strong></summary><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-80ed-9f89-cdb4635a3e3c" class="numbered-list" start="1"><li>Checar se o acesso à rede local está ativo no navegador utilizado. Após isso, reiniciar o navegador ou atualizar a página.<br/></li></ol></div><div style="display:contents" dir="ltr"><figure id="2ed4e803-85ee-80a5-82d4-daf88d5dfaae" class="image" style="text-align:center"><a href="image.png"><img style="width:505.96875px" src="image.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-803c-a713-cd7eb655bac8" class="numbered-list" start="2"><li>Usar o script disponível em<strong> E(MV2000):/TI/Shift/Conserta Shift.bat</strong></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-80b7-a83a-f6f566d5dc31" class="numbered-list" start="3"><li>Desinstalar e instalar o Shift novamente pelo caminho <br/><strong>E:/TI/Shift/ShiftAppInstall.exe</strong> como adminsitrador.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ed4e803-85ee-808a-a5d8-cfaff52a7580" class="numbered-list" start="4"><li>Caso não funcione mesmo assim, limpar os cookies do navegador.</li></ol></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2ee4e803-85ee-80c4-ad30-f8c94a7200c2"/></div><div style="display:contents" dir="auto"><ul id="2ef4e803-85ee-801e-93a2-e2c92b97f7a6" class="block-color-gray_background toggle"><li><details open=""><summary><strong>Criação de usuários</strong></summary><div style="display:contents" dir="auto"><p id="2ef4e803-85ee-8024-8995-c152afb04681" class="">SE FOR USUARIO DO LABORATORIO</p></div><div style="display:contents" dir="auto"><p id="2ef4e803-85ee-8011-8a76-e5967721c173" class="">Espelhar com o usuário que a pessoa pedir</p></div><div style="display:contents" dir="auto"><p id="2ef4e803-85ee-8056-9f34-f680244e472c" class="">SE NÃO FOR DO LABORATORIO</p></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-803e-8a55-db20ec53f0b7" class="numbered-list" start="1"><li>Digite  o código 4 e aperte em duplicar</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-800b-a36a-c339315f53cd" class="numbered-list" start="2"><li>Adicione o nome completo do usuário</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-8039-95a7-e195d9dbad9f" class="numbered-list" start="3"><li>No nome de usuário coloque o primeiro e o ultimo nome do requerente: “NOMESOBRENOME”</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-80a5-959f-ead18ae83180" class="numbered-list" start="4"><li>O apelido é o departamento do requerente</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-8016-b069-c16a976d1c01" class="numbered-list" start="5"><li>A senha é igual a o nome do usuário</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-8015-8d86-c3503ec22d85" class="numbered-list" start="6"><li>No perfil de acesso coloque o código 3</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2ef4e803-85ee-80c5-8f42-c4b63749b42d" class="numbered-list" start="7"><li>Va em acessos e em unid. Coleta de trabalho procure por </li></ol></div><div style="display:contents" dir="auto"><p id="2ef4e803-85ee-80ab-870c-f67c06caef46" class="">algo equivalente ao de departamento do requerente</p></div><div style="display:contents" dir="auto"><p id="2ef4e803-85ee-80f1-8c56-ccfe56c3860f" class="">
+</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2ee4e803-85ee-8018-baba-fec264667393"/></div><div style="display:contents" dir="auto"><ul id="2ef4e803-85ee-803f-a5a4-cc431a95cd17" class="toggle"><li><details open=""><summary>Funcionamento do Shift automação</summary><div style="display:contents" dir="auto"><ol type="1" id="2f04e803-85ee-8081-8362-ef5e1c85193c" class="numbered-list" start="1"><li>Prestar atenção nos 3 primeiros itens que são os documentos de funcionamento das maquinas, verificar se as horas estão batendo com a hora atual</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2f04e803-85ee-80cf-a3fb-ff25c97bbfee" class="numbered-list" start="2"><li>Se não estiverem batendo, clicar no botão vermelho para parar e caso não pare clicar no botão com o X para parar de maneira forçada e para voltar clicar no play</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2f04e803-85ee-80d0-bdb5-e135b672a80b" class="numbered-list" start="3"><li>Prestar atenção se todas as maquinas estão online se estiverem off-line faça o mesmo processo que nos 3 primeiros itens</li></ol></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2f44e803-85ee-80f9-9785-e86577217045"/></div><div style="display:contents" dir="auto"><ul id="2f44e803-85ee-80bb-b745-cc747263c488" class="toggle"><li><details open=""><summary>Grupos/áreas (notificações específicas, resultados críticos)</summary><div style="display:contents" dir="auto"><p id="2f44e803-85ee-8048-a664-c15a185a31da" class="">Sempre que algum formado como biomédico, farmacêutico, etc., entre no setor é necessário colocá-los no grupo correspondente seguindo os menus dentro do LIS:</p></div><div style="display:contents" dir="auto"><ul id="2f44e803-85ee-8007-9831-ebfbd11acc07" class="bulleted-list"><li style="list-style-type:disc">Qualidade → Configuração → Área</li></ul></div><div style="display:contents" dir="auto"><p id="2f44e803-85ee-8063-a1aa-e7ca83440e9d" class="">E incluir o usuário desejado na lista. Lembrar de preencher os check-boxes de cada um dentro da lista.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="2f44e803-85ee-8074-991f-c23693e23d72"/></div><div style="display:contents" dir="auto"><ul id="3174e803-85ee-8078-8617-da5b36cab6a9" class="toggle"><li><details open=""><summary>Instalar sistemas nos municipios</summary><div style="display:contents" dir="auto"><p id="3174e803-85ee-805e-b8b5-e8b36d45c38a" class="">Primeiramente, é preciso saber o que será feito no computador.</p></div><div style="display:contents" dir="auto"><ul id="3174e803-85ee-80e1-b96e-dc11f0271e8d" class="bulleted-list"><li style="list-style-type:disc">Se o computador será utilizado apenas na sala de coleta, para realizar impressões de etiquetas e registro de coletas: instalar apenas Shift</li></ul></div><div style="display:contents" dir="auto"><ul id="3174e803-85ee-8027-b881-dc63effb1778" class="bulleted-list"><li style="list-style-type:disc">Se forem realizados cadastros de pacientes no MV: instalar Sophos e Shift</li></ul></div><div style="display:contents" dir="auto"><p id="3174e803-85ee-8003-8d1a-ed1f765c98de" class=""><br/>Iniciando: copiar todos os arquivos da pasta <strong>Fluxo Hospital de Base</strong> para o computador.<br/>Instalar o Sophos Connect. (é necessária permissão de ADM)</p></div><div style="display:contents" dir="auto"><p id="3174e803-85ee-8039-852a-f30e32cd15eb" class="">Instalação Sophos:</p></div><div style="display:contents" dir="auto"><p id="3174e803-85ee-8078-9b81-c39d66433df4" class="">entrar em: https://vpn.hospitaldebase.com.br:4442/<br/>Fazer login com usuário e senha de rede da pessoa que utilizará o computador.<br/>Baixar o SSL e executá-lo</p></div><div style="display:contents" dir="ltr"><figure id="3174e803-85ee-8096-ab48-d1a6262d11af" class="image"><a href="image%201.png"><img style="width:650.9722290039062px" src="image%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="3174e803-85ee-809a-bcaa-ea4976f1c679" class="">asdasd</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="3194e803-85ee-8084-8f01-db9d7e183163"/></div><div style="display:contents" dir="auto"><ul id="3254e803-85ee-803d-9882-f20d19cf53d3" class="toggle"><li><details open=""><summary>Informações pré-analíticas (perguntas em recebimento no setor)</summary><div style="display:contents" dir="auto"><p id="3254e803-85ee-8073-ba54-d1557fac5b3f" class="">Adicionar informações pré-analíticas e também linkar qual recipiente é usado para os procedimentos que precisam desta informação, por exemplo:</p></div><div style="display:contents" dir="ltr"><figure id="3254e803-85ee-806a-83bc-c83b2118f7b3" class="image"><a href="image%202.png"><img style="width:681.9618530273438px" src="image%202.png"/></a></figure></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="32d4e803-85ee-801b-824b-c82aa91a03d4"/></div><div style="display:contents" dir="auto"><ul id="32d4e803-85ee-8047-a3e3-db4dbac6f060" class="toggle"><li><details open=""><summary>Serviço de importação - APOIO</summary><div style="display:contents" dir="auto"><p id="32d4e803-85ee-80aa-82f0-f32025404817" class="">Para que aconteça a importação de resultados de laboratórios de apoio, é necessário criar uma tarefa no menu do LIS <strong>PAINEL DE TAREFAS. </strong>Caso um serviço tenha parado, cheque a tarefa de importação dele, e <mark class="highlight-teal"><strong><span style="border-bottom:0.05em solid">guarde as informações dela para criar uma nova tarefa</span></strong></mark>. </p></div><div style="display:contents" dir="auto"><p id="32d4e803-85ee-8003-9912-f9d6df58ded1" class="">Para deletar a tarefa, clique no <mark class="highlight-red"><strong>X </strong></mark>embaixo da coluna de opções e exclua a tarefa.<br/>Após excluir, crie uma nova tarefa com as informações que você guardou anteriormente. Depois basta clicar no botão de play para iniciar.</p></div><div style="display:contents" dir="auto"><p id="32d4e803-85ee-80ae-98b1-dc3bfce0bf53" class="">O funcionamento da importação pode ser checado no menu <strong>IMPORTAÇÃO DE RESULTADOS.</strong></p></div><div style="display:contents" dir="auto"><p id="32d4e803-85ee-80b7-94d4-dd93b095919a" class="">Tarefas de importação para novas integrações com laboratório podem ser criadas semelhantemente.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="32d4e803-85ee-80b9-ab47-d3fc2101a27d"/></div><div style="display:contents" dir="auto"><ul id="32e4e803-85ee-8040-9cf4-f673f7437abc" class="toggle"><li><details open=""><summary>Resultados críticos - Microbiologia</summary><div style="display:contents" dir="auto"><p id="32e4e803-85ee-8061-9af2-e388adf3cc02" class="">Verificar qual é o microrganismo caracterizado como resultado crítico → encontrar ele em “Cadastro de Grupo de Laudo” → Incluir o microrganismo em “Cadastro de Item de Laudo” como resultado crítico (copiar o nome exato)</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="32e4e803-85ee-80c6-b21b-f8f058832544"/></div><div style="display:contents" dir="auto"><ul id="32f4e803-85ee-80c4-b947-c8759d2bebf3" class="toggle"><li><details open=""><summary>PROCESSOS ANALÍTICOS</summary><div style="display:contents" dir="auto"><p id="32f4e803-85ee-8010-9a14-f71e668d23c8" class="">Sempre que houver mudança de máscara que não envolve adição/remoção/alteração de tipo de parâmetros, é aconselhável apenas fazer as mudanças necessárias criando processos analíticos</p></div></details></li></ul></div><div style="display:contents" dir="auto"><hr id="33c4e803-85ee-8032-a8bd-c6b830d9166f"/></div><div style="display:contents" dir="auto"><ul id="33c4e803-85ee-800f-a353-d7987b9b16ba" class="toggle"><li><details open=""><summary>INSTALAÇÃO SHIFT</summary><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80bb-a415-dbaf737e5277" class="">primeiro eu vou entrar neste link aqui:</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80b6-820a-ee9f9dedddf4" class=""><a href="https://downloads.shift.com.br/ShiftApp/048/ShiftAppInstall048.zip">https://downloads.shift.com.br/ShiftApp/048/ShiftAppInstall048.zip</a></p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-803d-a5b7-df1e84170088" class="">extrair o arquivo e executar como administrador</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8072-b089-e33a5bd6e488" class="">só aceitar e permitir tudo</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80a3-8229-f5547bfb932d" class="">depois da instalação, entrar no link</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80c6-b6c5-ec086b920f5e" class=""><a href="http://hb.shiftcloud.com.br/">hb.shiftcloud.com.br</a> e logar com seu usuário</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8097-9b73-e12b70141586" class="">clicar em <strong>permitir</strong> na janela superior esquerda</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-806d-873c-de3bc02e9801" class="">clicar no nome do seu usuário -&gt; saída de impressão e arquivos -&gt; (Perfil de impressão e saída de arquivos) perfil HB -&gt; salvar</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8050-86a6-fb9c32d530f0" class="">entrar no link <a href="https://hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls">https://hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls</a> (Etiquetas Laboratório)</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80ab-a1c8-d8ad44125e09" class="">atendimento -&gt; monitor de o.s.</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8064-a978-cc5c97a35dbe" class="">selecionar a unidade de coleta correspondente a Fernandópolis (lupinha)</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8002-874b-f8623c6a381d" class="">adicionar todos os procedimentos (lupinha tbm)</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80c1-ae8b-c4d8d9a5dbe4" class="">e selecionar origem -&gt; integração</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8013-b82a-dba075445b98" class="">filtrar</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80df-b7a9-c3f1a1ad0334" class="">no canto inferior, selecionar 500 registros por página</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80ea-87fb-e57308f7dd77" class="">link para res. de exames: <a href="https://hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO%5C%5C&amp;sigla">https://hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO\\&amp;sigla</a> (Resultados de Exames)</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-800b-b295-e26dd47e8a5d" class="">u:  FERNANDOPOLIS</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8024-a6c4-d296a34a1d5c" class="">pw: RESULTADOS</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80da-a1e1-efc127f1de80" class="">Criar atalhos para os links (NÃO criar para <strong><a href="http://hb.shiftcloud.com.br/">hb.shiftcloud.com.br</a></strong>, apenas os outros)</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8054-abe4-e2a50ac85a5f" class="">Isso finaliza a instalação da Shift.</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-80b5-98b2-ddd115514f0e" class="">este é um comando para reiniciar o serviço da Shift, caso dê algum problema:</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8055-89b9-fadb3f2c2ef6" class="">taskkill /F /IM javaw.exe</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8077-91d5-e3cfae9402b5" class="">Compilado como script .bat</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8061-9776-f1b64d214177" class="">Só clicar duas vezes que ele abre a Shift dnv</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-8011-82aa-e3f2d49e5276" class="">sem a shift aberta, fica assim: carregando sem fim e pedindo download</p></div><div style="display:contents" dir="auto"><p id="33c4e803-85ee-806c-8717-cde6d8c5f369" class="">pronto</p></div></details></li></ul></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

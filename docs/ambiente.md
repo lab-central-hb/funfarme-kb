@@ -1,6 +1,6 @@
 # Ambiente de TI — Laboratório HBASE
 > Documento de referência técnica para uso no projeto Claude.
-> Última atualização: 2026-05-12
+> Última atualização: 2026-06-22
 > Mantenedor: Pedro Santana
 
 ---
@@ -43,7 +43,26 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
   - `\\192.168.20.44\ImagensCobasI` (usuário: `administrator`, senha em cofre local)
   - `\\192.168.20.44\ImagensCobasII` (usuário: `administrator`, senha em cofre local)
 
-### 3.3 SRV-TS — Terminal Server
+### 3.3 AQURE
+- **IP:** `172.30.57.101`
+- **Acesso:** `.\administrator` / *(senha em cofre local)*
+
+### 3.4 Impressora Diretoria
+- **IP:** `172.30.57.9`
+- **Acesso:** `admin` / *(senha em cofre local)*
+
+### 3.5 Painel HLab
+- **ID:** `1575619917`
+
+### 3.6 Painel Lab
+- **Hostname:** NTI-60200
+- **IP:** `172.30.57.30`
+
+### 3.7 Conta Lab (Gmail / GitHub)
+- **E-mail:** `tilabcentral@gmail.com`
+- **Senha:** *(cofre local)*
+
+### 3.8 SRV-TS — Terminal Server
 - **Função:** Acesso remoto ao sistema SoulMV para colaboradores de municípios vizinhos.
 - **IP:** `10.10.10.124`
 - **Acesso:** Via SophosVPN + Remote Desktop com credenciais individuais (`nome.sobrenome@hbase.local`)
@@ -53,7 +72,7 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
   - `C:\scripts\DailyReboot.ps1` — reinicia o servidor diariamente às 23h30 com avisos de 5 e 1 minuto
   - `C:\scripts\TSUserSnapshots_YYYY-MM.csv` — CSV mensal gerado pelo snapshot
 
-### 3.4 SRV-TS02 — Terminal Server
+### 3.9 SRV-TS02 — Terminal Server
 - **Função:** Acesso remoto ao sistema SoulMV para colaboradores de municípios vizinhos.
 - **IP:** `10.10.10.125`
 - **Acesso:** Via SophosVPN + Remote Desktop com credenciais individuais (`nome.sobrenome@hbase.local`)
@@ -95,6 +114,19 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
 
 ### 5.1 Shift (Pulsa pela Vida)
 Sistema LIS principal do laboratório. Composto por 5 módulos, dos quais utilizamos:
+
+**Links de acesso:**
+
+| Sistema | URL |
+|---|---|
+| LIS | `http://hb.shiftcloud.com.br/main/app` |
+| Etiquetas Lab | `https://hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls` |
+| Integração | `https://integracao.shiftcloud.com.br/shift/integracao/hospitaldebase/mv/s00.iu.Menu.cls` |
+| Automação | `https://automacao.hospitaldebase.com.br/shift/automacao/hospbase/s00.iu.Menu.cls?OrigemLogin=Login` |
+| P-512 (local) | `http://192.168.20.91:57774/shift/integracao/hb/cobas/s00.iu.Login.cls` |
+| Resultados de Exames | `https://hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO\\&sigla` |
+
+**Credenciais de municípios para Resultados de Exames:** *(cofre local)*
 
 | Módulo | Nome curto | Função |
 |---|---|---|
@@ -150,9 +182,10 @@ Sistema LIS principal do laboratório. Composto por 5 módulos, dos quais utiliz
 | Adele Cristina Betum | Enfermeira — Supervisora de operações |
 
 - **Ramal Coordenação:** 1085
-- **Ramal Sala Administrativa:** 5024 / 1423
-
-> ⚠️ *Pendente — ramais de Apoio, Bioquímica e Almoxarifado a confirmar.*
+- **Ramal Sala Administrativa:** 5024
+- **Ramal Apoio:** 1422
+- **Ramal Bioquímica:** 1423
+- **Ramal Ambulatório:** 5456
 
 ---
 
@@ -207,11 +240,35 @@ Kit de trabalho pessoal de TI.
 
 ---
 
-## 9. Pendências de Documentação
+## 9. Contatos Externos
+
+| Entidade | Telefone |
+|---|---|
+| Hermes Pardini (apoio) | 31 3228-6646 |
+
+---
+
+## 10. Máscaras em PDF (erro no relatório de exportação)
+
+Procedimentos que utilizam campo PDF e causam erro no relatório de exportação:
+
+| Código Shift | Código SoulMV |
+|---|---|
+| 2247 | — |
+| 1245 | 232 |
+| 2299 | 741 |
+| 2037 | — |
+| 2321 | — |
+| 2189 | — |
+| 1629 | — |
+
+---
+
+## 11. Pendências de Documentação
 
 - [ ] Lista completa de equipamentos de microbiologia e biomolecular
 - [ ] Descrição do módulo Shift View
 - [ ] Detalhamento dos cenários de erro no SoulMV e suas soluções
-- [ ] Ramais de Apoio, Bioquímica e Almoxarifado
+- [ ] Ramal do Almoxarifado
 - [ ] Scripts avulsos do `D:\santana\scripts\` root (descrição individual de cada um)
 - [ ] Outros servidores ou sistemas não mencionados ainda
