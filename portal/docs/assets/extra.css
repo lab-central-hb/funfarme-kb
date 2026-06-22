@@ -218,7 +218,6 @@
   align-items: center;
   justify-content: center;
   background: var(--md-default-bg-color, #fff);
-  animation: fadeIn .3s ease-out both;
 }
 
 .auth-card {
