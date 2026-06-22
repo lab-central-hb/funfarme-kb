@@ -208,7 +208,23 @@
   transition: box-shadow .3s ease;
 }
 
-/* --- Auth gate --- */
+/* --- Auth gate: locked state hides all page chrome --- */
+
+body.auth-locked .md-header,
+body.auth-locked .md-tabs,
+body.auth-locked .md-container,
+body.auth-locked .md-banner,
+body.auth-locked .md-dialog,
+body.auth-locked .md-top,
+body.auth-locked [data-md-component="skip"],
+body.auth-locked [data-md-component="announce"],
+body.auth-locked .md-overlay {
+  display: none !important;
+}
+
+body.auth-locked {
+  overflow: hidden;
+}
 
 .auth-overlay {
   position: fixed;
