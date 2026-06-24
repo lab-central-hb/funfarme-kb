@@ -14,30 +14,33 @@ O laboratório faz parte do complexo hospitalar da FUNFARME, integrado ao Hospit
 O laboratório utiliza os seguintes servidores:
 
 | Servidor | Função | SO |
-|----------|--------|----|
+|---|---|---|
 | **Servidor Cloud (Shift)** | Hospeda o Shift LIS — mantido pela empresa Shift | Gerenciado externamente |
 | **SRV-AUTOMA** | Interfaceamento dos equipamentos com o Shift (CachéITF) | Windows Server 2016 |
 | **SRV-TS** | Acesso remoto ao SoulMV para municípios | Windows Server |
 | **SRV-TS02** | Segundo servidor de acesso remoto ao SoulMV | Windows Server |
 | **AQURE** | Servidor AQURE | — |
 
-Outros dispositivos: Impressora Diretoria (`172.30.57.9`), Painel HLab, Painel Lab (`172.30.57.30`).
-
 Para detalhes de cada servidor, consulte a página [Servidores](servidores.md).
 
 ## Equipamentos Laboratoriais
 
-O laboratório possui equipamentos interfaceados com o Shift Automação nas seguintes áreas:
+O laboratório possui 25 equipamentos distribuídos nas seguintes áreas:
 
 | Área | Equipamentos |
-|------|-------------|
-| Urinálise | Cobas 6500 I, Cobas 6500 II |
-| Bioquímica / Imunologia | Cobas PRO I |
-| Sorologias | Cobas PRO II |
-| Hematologia | STA COMPACT MAX, STA R MAX, XN 3100, XN 1000, XN 550 |
-| Gasometria | ABL-800 FLEX |
-| Eletrólitos | MAX ION 800 |
-| Microbiologia / Biomolecular | Documentação pendente |
+|---|---|
+| Urinálise | Cobas 6500 I e II |
+| Bioquímica | Cobas PRO I (Rota R9) |
+| Imunologia / Hormônios / Sorologias | Cobas PRO II (Rota R8) |
+| Hematologia | XN 3100 (+ R e L), XN 1000, XN 550, Micros 60 |
+| Hemostasia | STA Compact MAX, STA R MAX |
+| Gasometria | ABL 800 (8x), ABL 90 Flex |
+| Imunologia (Abbott) | i1000, i2000 |
+| Alergologia | ImmunoCap Export, ImmunoCap Query |
+| Imuno-hematologia | IH 500 |
+| Hemoglobina Glicada / VHS | Premier Hb 9210, Roller 20 |
+| Microbiologia | Myla |
+| Biologia Molecular | Cobas 6800, GeneXpert I e II |
 
 Para detalhes, consulte a página [Equipamentos](equipamentos.md).
 

@@ -70,11 +70,11 @@ Este portal reúne informações operacionais sobre infraestrutura, sistemas, eq
 
 ## Status Rápido
 
-!!! info "Atualizado em 22/06/2026"
+!!! info "Atualizado em 24/06/2026"
 
     | Indicador | Valor |
     |-----------|-------|
     | Tarefas abertas | 4 |
     | Tarefas em andamento | 4 |
     | Concluídas em junho | 16 |
-    | Próximo agendamento | MAX ION 800 (24/06) |
+    | Equipamentos catalogados | 25 |
