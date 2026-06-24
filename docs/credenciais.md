@@ -76,7 +76,7 @@
 
 ---
 
-## Computador do Analista de TI (NTI-102856)
+## Computador do Assistente de TI (NTI-102856)
 
 - **IP:** `172.30.57.127`
 - **Hostname:** NTI-102856

@@ -6,8 +6,8 @@ Estrutura da equipe do laboratório da FUNFARME.
 
 | Nome | Função |
 |------|--------|
-| Pedro Santana | Analista de TI — Administrador de servidores, contato principal |
-| Kauã | Menor aprendiz — Suporte ao analista de TI |
+| Pedro Santana | Assistente de TI — Administrador de servidores, contato principal |
+| Kauã | Menor aprendiz — Suporte ao assistente de TI |
 
 ## Coordenação
 
