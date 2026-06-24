@@ -39,4 +39,4 @@ Estrutura da equipe do laboratório da FUNFARME.
 
 ## Conta Institucional
 
-- **E-mail:** `tilabcentral@gmail.com` (Gmail / GitHub)
+Conta de e-mail institucional mantida internamente pela equipe de TI.

@@ -14,25 +14,42 @@ Todas as respostas e documentos em **português brasileiro**.
 
 Leia os arquivos locais antes de responder perguntas técnicas. Não invente informações sobre o ambiente.
 
+### Documentação pública (portal web)
 ```
-./docs/ambiente.md       # Infraestrutura, servidores, sistemas, equipe
-./docs/tarefas.md        # Backlog de TI
-./docs/inventario/       # Inventário de PCs da rede (~255 arquivos .txt por hostname)
-./docs/sistemas/         # Guias por sistema (Shift LIS, SoulMV, etc.)
-./docs/equipamentos/     # Manuais e configurações de equipamentos laboratoriais
-./docs/procedimentos/    # SOPs, onboarding, checklists, soluções documentadas
-./docs/incidentes/       # Registro de incidentes e resoluções
-./reports/               # Relatórios mensais e semanais
-./scripts/               # Scripts de manutenção e automação
-./shift/                 # Material Shift: dados, rotas, docs contratuais, relatórios
-./documentos/            # Docs administrativos (custódia, patrimônio)
-./toolkit/               # Ferramentas: drivers, instaladores, ícones, utilitários
-./staging/               # Dados brutos para processar (planilhas, CSVs, etc.)
+./portal/docs/               # Fonte única para documentação NÃO-sensível
+  infraestrutura/             # Equipamentos, servidores, visão geral da rede
+  sistemas/                   # Shift LIS, Automação, Integração, SoulMV, fluxo de resultados
+  tarefas/                    # Backlog de TI (mensal)
+  relatorios/                 # Relatórios mensais
+  procedimentos/              # SOPs, checklists, soluções documentadas
+  scripts/                    # Catálogo de scripts
+  equipe/                     # Staff e coordenação
+  municipios/                 # Status de integração dos municípios
+```
+
+### Documentação interna (NÃO vai pro portal)
+```
+./docs/credenciais.md         # IPs, senhas, acessos, UNC paths, dados sensíveis
+./docs/tarefas.md             # Backlog de TI (fonte rápida)
+./docs/inventario/            # Inventário de PCs da rede (~255 arquivos .txt por hostname)
+./docs/procedimentos/         # Guias internos adicionais
+./docs/incidentes/            # Registro de incidentes e resoluções
+```
+
+### Outros diretórios
+```
+./reports/                    # Relatórios mensais e semanais
+./scripts/                    # Scripts de manutenção e automação
+./shift/                      # Material Shift: dados, rotas, docs contratuais, relatórios
+./documentos/                 # Docs administrativos (custódia, patrimônio)
+./toolkit/                    # Ferramentas: drivers, instaladores, ícones, utilitários
+./staging/                    # Dados brutos para processar (planilhas, CSVs, etc.)
 ```
 
 ## Regras
 
-- Fonte da verdade: arquivos em `./docs/`. Se a informação não está documentada, pergunte ao Pedro.
+- Fonte da verdade: `./portal/docs/` (público) + `./docs/` (interno). Se a informação não está documentada, pergunte ao Pedro.
+- Ao atualizar equipamentos, sistemas ou procedimentos: atualizar em `./portal/docs/` (fonte única). Dados sensíveis (IPs, senhas) vão exclusivamente em `./docs/credenciais.md`.
 - Ao atualizar qualquer arquivo, mostre o diff e aguarde confirmação.
 - Manter `.md` concisos — sem padding, sem repetição.
 - Nunca inventar IPs, senhas, ramais ou configurações não documentadas.

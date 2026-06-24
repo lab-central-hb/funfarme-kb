@@ -11,7 +11,6 @@ O Shift LIS (Laboratory Information System) é o sistema principal do laboratór
 | **Resultados de Exames** | `hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO\\&sigla` |
 | **Integração** | `integracao.shiftcloud.com.br/shift/integracao/hospitaldebase/mv/s00.iu.Menu.cls` |
 | **Automação** | `automacao.hospitaldebase.com.br/shift/automacao/hospbase/s00.iu.Menu.cls` |
-| **P-512 (local)** | `192.168.20.91:57774/shift/integracao/hb/cobas/s00.iu.Login.cls` |
 
 ## Função
 
