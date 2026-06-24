@@ -58,5 +58,10 @@ A integração de um novo município envolve:
 
 Para o procedimento detalhado de instalação, consulte [Instalação Shift em Municípios](../procedimentos/instalacao-municipios.md).
 
+!!! warning "Suporte remoto — restrição ativa (junho 2026)"
+    A equipe de redes bloqueou ferramentas de acesso remoto externo (AnyDesk, TeamViewer) como medida de segurança. O suporte direto às máquinas dos municípios está limitado. Apenas MSRA é permitido para máquinas na rede interna.
+
+    **Plano:** capacitar técnicos de TI dos municípios para resolução autônoma de problemas.
+
 !!! info "Dados de usuários"
     O cadastro detalhado de usuários por município (credenciais, VPN, dados pessoais) é mantido em planilha interna e não está disponível neste portal.

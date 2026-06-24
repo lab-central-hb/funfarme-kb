@@ -8,6 +8,8 @@ Backlog de atividades da equipe de TI do laboratório.
 - [ ] **[Shift LIS]** Máscara C216 — novo procedimento, enviar e-mail — *aberta em 13/04*
 - [ ] **[Shift LIS]** Máscara RECALCRE — pegar laudo referência com apoio — *aberta em 02/03*
 - [ ] **[Shift LIS]** Máscara IGE I5 — enviar e-mail — *aberta em 11/03*
+- [ ] **[Municípios]** Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) — *aberta em 24/06*
+- [ ] **[Rede/Servidores]** Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 24/06*
 
 ## Em Andamento
 

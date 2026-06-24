@@ -14,6 +14,8 @@
 - [ ] [Shift LIS] Máscara C216 — novo procedimento, enviar e-mail — *aberta em 2026-04-13*
 - [ ] [Shift LIS] Máscara RECALCRE — pegar laudo referência com apoio (resp. Kauã) — *aberta em 2026-03-02*
 - [ ] [Shift LIS] Máscara IGE I5 — enviar e-mail (resp. Kauã) — *aberta em 2026-03-11*
+- [ ] [Municípios] Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) — *aberta em 2026-06-24*
+- [ ] [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 2026-06-24*
 
 ---
 
