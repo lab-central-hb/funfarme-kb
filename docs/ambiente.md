@@ -1,6 +1,6 @@
 # Ambiente de TI — Laboratório HBASE
 > Documento de referência técnica para uso no projeto Claude.
-> Última atualização: 2026-06-22
+> Última atualização: 2026-06-24
 > Mantenedor: Pedro Santana
 
 ---
@@ -82,6 +82,8 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
 
 ## 4. Equipamentos Laboratoriais
 
+> Detalhamento completo (incluindo rotas de exames) em [`docs/equipamentos/equipamentos-laboratoriais.md`](equipamentos/equipamentos-laboratoriais.md).
+
 ### 4.1 Urinálise
 | Equipamento | IP | Diretório de imagens |
 |---|---|---|
@@ -91,22 +93,49 @@ O foco deste projeto é a manutenção, configuração e suporte dos sistemas e 
 - Enviam resultados numéricos e imagens de microscopia para o Shift Automação.
 - Backup semanal automatizado via `Backup-CobasImages.ps1` (toda segunda-feira às 02h00).
 
-### 4.2 Bioquímica / Imunologia
-- **Cobas PRO I** — responsável por todos os exames de bioquímica e imuno. Resultados enviados para Automação.
+### 4.2 Bioquímica
+- **Cobas PRO I** (Rota R9) — bioquímica geral, marcadores tumorais (CA125, CEA, CA19.9), complementos, troponina. Resultados enviados para Automação.
 
-### 4.3 Sorologias
-- **Cobas PRO II** — dedicado exclusivamente a sorologias. Resultados enviados para Automação.
+### 4.3 Imunologia / Hormônios / Sorologias
+- **Cobas PRO II** (Rota R8) — hormônios (TSH, T4, cortisol, insulina, testosterona, FSH, LH, prolactina), sorologias (HIV, hepatites, toxo, rubéola, CMV, sífilis, Chagas), ferritina, vitaminas B12 e D. Resultados enviados para Automação.
 
 ### 4.4 Hematologia
-- STA COMPACT MAX
-- STA R MAX
-- XN 3100
-- XN 1000
-- XN 550
+- XN 3100 (+ módulos R e L) — Sysmex
+- XN 1000 — Sysmex
+- XN 550 — Sysmex
+- Micros 60 — ABX Pentra
 
-### 4.5 Microbiologia e Biomolecular
-> ⚠️ *Pendente — lista completa a ser fornecida futuramente.*
-> Nota: nem todos os equipamentos do laboratório possuem interface com o sistema para resultados de automação.
+### 4.5 Hemostasia
+- STA Compact MAX — Stago
+- STA R MAX — Stago
+
+### 4.6 Gasometria
+- ABL 800 — Radiometer (8 unidades)
+- ABL 90 Flex — Radiometer
+
+### 4.7 Imunologia (Abbott)
+- i1000 — Abbott Architect
+- i2000 — Abbott Architect
+
+### 4.8 Alergologia
+- ImmunoCap Export — Phadia
+- ImmunoCap Query — Phadia
+
+### 4.9 Imuno-hematologia
+- IH 500 — Bio-Rad
+
+### 4.10 Hemoglobina Glicada / VHS
+- Premier Hb 9210 — Trinity Biotech
+- Roller 20 — Alifax
+
+### 4.11 Microbiologia
+- Myla — bioMérieux
+
+### 4.12 Biologia Molecular
+- Cobas 6800 — Roche
+- GeneXpert I e II — Cepheid
+
+> Nota: nem todos os equipamentos possuem interface com o Shift Automação.
 
 ---
 
@@ -266,7 +295,7 @@ Procedimentos que utilizam campo PDF e causam erro no relatório de exportação
 
 ## 11. Pendências de Documentação
 
-- [ ] Lista completa de equipamentos de microbiologia e biomolecular
+- [x] Lista completa de equipamentos laboratoriais (atualizada 2026-06-24)
 - [ ] Descrição do módulo Shift View
 - [ ] Detalhamento dos cenários de erro no SoulMV e suas soluções
 - [ ] Ramal do Almoxarifado
