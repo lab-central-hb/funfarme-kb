@@ -195,123 +195,141 @@ def generate_md_report(year, month, concluidas, pendentes, incidents):
     return "\n".join(lines)
 
 
+def replace_text_in_slide(slide, replacements):
+    for shape in slide.shapes:
+        if not shape.has_text_frame:
+            continue
+        for paragraph in shape.text_frame.paragraphs:
+            for run in paragraph.runs:
+                for old, new in replacements.items():
+                    if old in run.text:
+                        run.text = run.text.replace(old, new)
+
+
+def clone_slide(prs, template_slide):
+    """Clone a slide from the template into the presentation."""
+    from copy import deepcopy
+    from lxml import etree
+
+    slide_layout = prs.slide_layouts[6]
+    new_slide = prs.slides.add_slide(slide_layout)
+
+    for shape in list(new_slide.shapes):
+        sp = shape._element
+        sp.getparent().remove(sp)
+
+    for shape in template_slide.shapes:
+        el = deepcopy(shape._element)
+        new_slide.shapes._spTree.append(el)
+
+    return new_slide
+
+
 def generate_pptx(year, month, concluidas, pendentes, incidents):
     from pptx import Presentation
     from pptx.util import Inches, Pt
-    from pptx.enum.text import PP_ALIGN
+    from pptx.dml.color import RGBColor
 
+    TEMPLATE_PATH = ROOT / "reports" / "template.pptx"
+
+    if not TEMPLATE_PATH.exists():
+        print(f"  Aviso: template não encontrado em {TEMPLATE_PATH}, gerando sem template")
+        prs = Presentation()
+        prs.slide_width = Inches(13.333)
+        prs.slide_height = Inches(7.5)
+        return prs
+
+    template = Presentation(str(TEMPLATE_PATH))
     prs = Presentation()
-    prs.slide_width = Inches(13.333)
-    prs.slide_height = Inches(7.5)
+    prs.slide_width = template.slide_width
+    prs.slide_height = template.slide_height
 
+    # Copy slide layouts from template
     month_name = MESES_PT[month]
-
-    # --- Slide 1: Capa ---
-    slide = prs.slides.add_slide(prs.slide_layouts[6])  # blank
-    txBox = slide.shapes.add_textbox(Inches(1), Inches(2.5), Inches(11), Inches(2))
-    tf = txBox.text_frame
-    p = tf.paragraphs[0]
-    p.text = f"Resumo Mensal — {month_name} {year}"
-    p.font.size = Pt(36)
-    p.font.bold = True
-    p.alignment = PP_ALIGN.CENTER
-    p2 = tf.add_paragraph()
-    p2.text = "TI Laboratório — FUNFARME"
-    p2.font.size = Pt(20)
-    p2.alignment = PP_ALIGN.CENTER
-    p3 = tf.add_paragraph()
-    p3.text = f"\n{len(concluidas)} tarefas concluídas"
-    p3.font.size = Pt(18)
-    p3.alignment = PP_ALIGN.CENTER
-
-    # --- Slide 2: Resumo por categoria ---
-    slide = prs.slides.add_slide(prs.slide_layouts[6])
-    title_box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12), Inches(0.8))
-    tf = title_box.text_frame
-    p = tf.paragraphs[0]
-    p.text = "Resumo por Categoria"
-    p.font.size = Pt(28)
-    p.font.bold = True
-
+    titulo_mes = f"{month_name} {year}"
     cat_counts = Counter(t["category"] for t in concluidas)
-    y = Inches(1.3)
+
+    TEAL = RGBColor(0x00, 0x89, 0x7B)
+    DARK = RGBColor(0x21, 0x21, 0x21)
+    GRAY = RGBColor(0x75, 0x75, 0x75)
+    WHITE = RGBColor(0xFF, 0xFF, 0xFF)
+
+    # --- Slide 0: Capa ---
+    slide = clone_slide(prs, template.slides[0])
+    replace_text_in_slide(slide, {
+        "{TITULO_MES}": titulo_mes,
+        "{TOTAL_CONCLUIDAS}": str(len(concluidas)),
+        "{TOTAL_PENDENTES}": str(len(pendentes)),
+        "{TOTAL_INCIDENTES}": str(len(incidents)),
+    })
+
+    # --- Slide 1: Resumo por categoria ---
+    slide = clone_slide(prs, template.slides[1])
+    cat_text = ""
     for cat, count in cat_counts.most_common():
-        box = slide.shapes.add_textbox(Inches(1), y, Inches(10), Inches(0.45))
-        tf = box.text_frame
-        p = tf.paragraphs[0]
-        p.text = f"{cat}: {count} tarefa{'s' if count > 1 else ''}"
-        p.font.size = Pt(18)
-        y += Inches(0.5)
+        cat_text += f"{cat}: {count} tarefa{'s' if count > 1 else ''}\n"
+    cat_text += f"\nTotal: {len(concluidas)}"
+    replace_text_in_slide(slide, {
+        "{CATEGORIAS}": cat_text,
+        "{TITULO_MES}": titulo_mes,
+    })
 
-    total_box = slide.shapes.add_textbox(Inches(1), y + Inches(0.2), Inches(10), Inches(0.5))
-    tf = total_box.text_frame
-    p = tf.paragraphs[0]
-    p.text = f"Total: {len(concluidas)}"
-    p.font.size = Pt(20)
-    p.font.bold = True
+    # --- Slide 2: Distribuição semanal ---
+    slide = clone_slide(prs, template.slides[2])
+    weeks_data = defaultdict(int)
+    for t in concluidas:
+        wn = get_week_number(t["date"], month)
+        weeks_data[wn] += 1
+    weeks_text = ""
+    for wn in sorted(weeks_data.keys()):
+        start, end = get_week_range(year, month, wn)
+        weeks_text += f"Semana {wn} ({start}–{end}): {weeks_data[wn]} tarefa{'s' if weeks_data[wn] > 1 else ''}\n"
+    replace_text_in_slide(slide, {
+        "{SEMANAS}": weeks_text,
+        "{TITULO_MES}": titulo_mes,
+    })
 
-    # --- Slides por categoria ---
+    # --- Slides por categoria (clona slide 3 do template) ---
     for cat, count in cat_counts.most_common():
-        cat_tasks = [t for t in concluidas if t["category"] == cat]
-        slide = prs.slides.add_slide(prs.slide_layouts[6])
-
-        title_box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12), Inches(0.8))
-        tf = title_box.text_frame
-        p = tf.paragraphs[0]
-        p.text = f"{cat} ({count})"
-        p.font.size = Pt(24)
-        p.font.bold = True
-
-        content_box = slide.shapes.add_textbox(Inches(0.8), Inches(1.3), Inches(11), Inches(5.5))
-        tf = content_box.text_frame
-        tf.word_wrap = True
-
-        for i, t in enumerate(sorted(cat_tasks, key=lambda x: x["date"])):
+        slide = clone_slide(prs, template.slides[3])
+        cat_tasks = sorted(
+            [t for t in concluidas if t["category"] == cat],
+            key=lambda x: x["date"]
+        )
+        items_text = ""
+        for t in cat_tasks:
             dt = datetime.strptime(t["date"], "%Y-%m-%d")
-            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
-            p.text = f"• {t['description']} ({dt.day:02d}/{dt.month:02d})"
-            p.font.size = Pt(14)
-            p.space_after = Pt(4)
+            items_text += f"• {t['description']} ({dt.day:02d}/{dt.month:02d})\n"
+        replace_text_in_slide(slide, {
+            "{CATEGORIA_NOME}": cat,
+            "{CATEGORIA_QTD}": str(count),
+            "{CATEGORIA_ITENS}": items_text.rstrip(),
+            "{TITULO_MES}": titulo_mes,
+        })
 
-    # --- Slide: Pendências ---
+    # --- Slide: Pendências (clona slide 4) ---
     if pendentes:
-        slide = prs.slides.add_slide(prs.slide_layouts[6])
-        title_box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12), Inches(0.8))
-        tf = title_box.text_frame
-        p = tf.paragraphs[0]
-        p.text = "Pendências"
-        p.font.size = Pt(24)
-        p.font.bold = True
+        slide = clone_slide(prs, template.slides[4])
+        pend_text = ""
+        for t in pendentes:
+            pend_text += f"• [{t['category']}] {t['description']}\n"
+        replace_text_in_slide(slide, {
+            "{PENDENCIAS}": pend_text.rstrip(),
+            "{TITULO_MES}": titulo_mes,
+        })
 
-        content_box = slide.shapes.add_textbox(Inches(0.8), Inches(1.3), Inches(11), Inches(5.5))
-        tf = content_box.text_frame
-        tf.word_wrap = True
-
-        for i, t in enumerate(pendentes):
-            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
-            p.text = f"• [{t['category']}] {t['description']}"
-            p.font.size = Pt(14)
-            p.space_after = Pt(4)
-
-    # --- Slide: Incidentes ---
+    # --- Slide: Incidentes (clona slide 5) ---
+    slide = clone_slide(prs, template.slides[5])
     if incidents:
-        slide = prs.slides.add_slide(prs.slide_layouts[6])
-        title_box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12), Inches(0.8))
-        tf = title_box.text_frame
-        p = tf.paragraphs[0]
-        p.text = "Incidentes"
-        p.font.size = Pt(24)
-        p.font.bold = True
-
-        content_box = slide.shapes.add_textbox(Inches(0.8), Inches(1.3), Inches(11), Inches(5.5))
-        tf = content_box.text_frame
-        tf.word_wrap = True
-
-        for i, inc in enumerate(incidents):
-            p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
-            p.text = f"• {inc['date']} — {inc['title']}"
-            p.font.size = Pt(14)
-            p.space_after = Pt(4)
+        inc_text = ""
+        for inc in incidents:
+            inc_text += f"• {inc['date']} — {inc['title']}\n"
+    else:
+        inc_text = f"Nenhum incidente registrado em {month_name.lower()}."
+    replace_text_in_slide(slide, {
+        "{INCIDENTES}": inc_text.rstrip(),
+        "{TITULO_MES}": titulo_mes,
+    })
 
     return prs
 
