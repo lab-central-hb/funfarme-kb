@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "if": "file_path=docs/tarefas.md",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "D:/santana/funfarme-kb/scripts/sync-tarefas.bat",
+            "timeout": 15000
+          }
+        ]
+      }
+    ]
+  }
+}

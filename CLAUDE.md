@@ -38,7 +38,7 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 
 ### Outros diretórios
 ```
-./reports/                    # Relatórios mensais e semanais
+./reports/                    # Relatórios PPTX para apresentações
 ./scripts/                    # Scripts de manutenção e automação
 ./shift/                      # Material Shift: dados, rotas, docs contratuais, relatórios
 ./documentos/                 # Docs administrativos (custódia, patrimônio)
@@ -62,11 +62,19 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 | Comando | Ação |
 |---|---|
 | `registra incidente: [desc]` | Cria `./docs/incidentes/YYYY-MM-DD_titulo.md` |
-| `atualiza tarefa: [desc]` | Adiciona item em `./docs/tarefas.md` |
-| `fecha tarefa: [desc]` | Marca como concluído em `./docs/tarefas.md` |
-| `gera relatório semanal` | Lê incidentes + tarefas da semana, gera em `./reports/` |
-| `gera relatório mensal` | Relatório completo do mês em `./reports/` |
+| `atualiza tarefa: [desc]` | Adiciona item em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
+| `fecha tarefa: [desc]` | Marca como concluído em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
+| `gera relatório mensal` | Roda `python scripts/gera-relatorio.py [--mes YYYY-MM]` — gera MD (portal) + PPTX (reports/) |
 | `status` | Mostra tarefas abertas + últimos incidentes |
+
+## Scripts de automação
+
+| Script | Função | Quando usar |
+|---|---|---|
+| `scripts/sync-tarefas.py` | Sincroniza `docs/tarefas.md` → `portal/docs/tarefas/` | Após qualquer edição em tarefas.md |
+| `scripts/gera-relatorio.py` | Gera relatório mensal (MD + PPTX) | Comando `gera relatório mensal` ou fim do mês |
+
+Após editar `docs/tarefas.md`, **sempre** rodar `python scripts/sync-tarefas.py` para manter o portal sincronizado.
 
 ## Tokens — boas práticas
 
