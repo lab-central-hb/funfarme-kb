@@ -146,6 +146,14 @@ Procedimento completo de instalação para unidades de coleta em municípios.
 
 ---
 
+## Manutenção de Disco — SRV-AUTOMA
+
+Limpeza periódica de logs, traces e debug files, e verificação do fluxo de imagens dos Cobas.
+
+[Ver procedimento detalhado :octicons-arrow-right-24:](manutencao-srv-automa.md)
+
+---
+
 ## Reiniciar Serviço Shift (local)
 
 Quando o Shift trava no computador local:
