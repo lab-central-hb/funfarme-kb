@@ -2,7 +2,7 @@
 
 - **Data do incidente:** 2026-05-15
 - **Data do registro:** 2026-06-25
-- **Status:** Em análise
+- **Status:** Registrado
 - **Servidor:** SRV-AUTOMA
 - **Equipamento:** Cobas 6500 II (urinálise)
 
