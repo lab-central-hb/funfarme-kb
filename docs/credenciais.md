@@ -76,6 +76,14 @@
 
 ---
 
+## Computador da Microbiologia — SARAMIS
+
+- **Sistema:** SARAMIS (identificação de microrganismos)
+- **Usuário principal:** `Labadmin` / *(senha em cofre local)* — uso dos microbiologistas
+- **Usuário de respaldo:** `Microbiologia` / *(senha em cofre local)* — para quando o Labadmin é bloqueado por erro de senha
+
+---
+
 ## Computador do Assistente de TI (NTI-102856)
 
 - **IP:** `172.30.57.127`
