@@ -7,3 +7,4 @@ Resumos mensais de atividades da equipe de TI do laboratório.
 | Mês | Status |
 |-----|--------|
 | [Junho 2026](2026-06.md) | :material-clock-outline: Parcial (mês em andamento) |
+| [Maio 2026](2026-05.md) | :material-check-circle: Completo |

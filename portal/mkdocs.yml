@@ -95,6 +95,7 @@ nav:
     - "Janeiro 2026": tarefas/2026-01.md
   - Relatórios:
     - relatorios/index.md
+    - "Maio 2026": relatorios/2026-05.md
     - "Junho 2026": relatorios/2026-06.md
   - Scripts: scripts/catalogo.md
   - Equipe: equipe/index.md

@@ -76,5 +76,5 @@ Este portal reúne informações operacionais sobre infraestrutura, sistemas, eq
     |-----------|-------|
     | Tarefas abertas | 4 |
     | Tarefas em andamento | 4 |
-    | Concluídas em junho | 16 |
+    | Concluídas em maio | 41 |
     | Equipamentos catalogados | 25 |
