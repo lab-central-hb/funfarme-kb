@@ -39,9 +39,9 @@ O arquivo `CLAUDE.md` na raiz configura o Claude Code como assistente técnico d
 
 | Comando | Ação |
 |---|---|
-| `registra incidente: [desc]` | Cria registro em `docs/incidentes/` |
-| `atualiza tarefa: [desc]` | Adiciona item no backlog e sincroniza portal |
-| `fecha tarefa: [desc]` | Marca como concluído e sincroniza portal |
+| `registra incidente: [desc]` | Cria registro em `docs/incidentes/` com ID incremental (I#) |
+| `atualiza tarefa: [T# ou desc]` | Atualiza tarefa por ID ou descrição e sincroniza portal |
+| `fecha tarefa: [T# ou desc]` | Marca como concluído e sincroniza portal |
 | `gera relatório mensal` | Gera MD + PPTX do mês |
 | `status` | Mostra tarefas abertas e últimos incidentes |
 | `registra conhecimento: [desc]` | Salva informação do ambiente na memória e na documentação |
