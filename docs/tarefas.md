@@ -12,8 +12,6 @@
 - [x] [Municípios] Votuporanga — instalar sistema Shift na cidade — *aberta em 2026-05-27* (agendado para 01/06)
 - [ ] [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
 - [ ] [Shift LIS] Máscara C216 — novo procedimento, enviar e-mail — *aberta em 2026-04-13*
-- [ ] [Shift LIS] Máscara RECALCRE — pegar laudo referência com apoio (resp. Kauã) — *aberta em 2026-03-02*
-- [ ] [Shift LIS] Máscara IGE I5 — enviar e-mail (resp. Kauã) — *aberta em 2026-03-11*
 - [ ] [Municípios] Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) — *aberta em 2026-06-24*
 - [ ] [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 2026-06-24*
 
@@ -23,10 +21,7 @@
 
 <!-- formato: - [~] [SISTEMA] Descrição — *iniciada em YYYY-MM-DD* -->
 
-- [~] [Shift LIS] Máscara Metil. Russell P.G. — painel genético Pardini, esperando informações — *iniciada em 2026-04-29*
-- [~] [Shift LIS] Máscara PB19PCR — esperando validação, troca de setor Apoio → Biomol — *iniciada em 2026-04-10*
-- [~] [Shift LIS] Máscara IMUNOF24 — em progresso — *iniciada em 2026-03-11*
-- [~] [Shift LIS] Máscara MECP2 — esperando informações sobre laudo (resp. Kauã) — *iniciada em 2026-03-02*
+<!-- nenhuma tarefa em andamento no momento -->
 
 ---
 
@@ -115,6 +110,15 @@
 - [x] [Shift LIS] Máscara COQ10 (resp. Kauã) — *concluída em 2026-06-17*
 - [x] [Shift LIS] Máscara DOEIMU — *concluída em 2026-06-18*
 - [x] [Shift Automação] ABL-800 — interface do gasômetro do HCM configurada para incorporar resultados de hemoglobinas — *concluída em 2026-06-18*
+
+#### Semana 4 (22–27/06)
+
+- [x] [Shift LIS] Máscara RECALCRE — *concluída em 2026-06-25*
+- [x] [Shift LIS] Máscara IGE I5 — *concluída em 2026-06-25*
+- [x] [Shift LIS] Máscara MECP2 — *concluída em 2026-06-25*
+- [x] [Shift LIS] Máscara IMUNOF24 — *concluída em 2026-06-25*
+- [x] [Shift LIS] Máscara PB19PCR — *concluída em 2026-06-25*
+- [x] [Shift LIS] Máscara Metil. Russell P.G. — painel genético Pardini — *concluída em 2026-06-25*
 
 ### Abril 2026
 
