@@ -12,7 +12,6 @@
 - [x] [Municípios] Votuporanga — instalar sistema Shift na cidade — *aberta em 2026-05-27* (agendado para 01/06)
 - [ ] [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
 - [ ] [Shift LIS] Máscara C216 — novo procedimento, enviar e-mail — *aberta em 2026-04-13*
-- [ ] [Municípios] Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) — *aberta em 2026-06-24*
 - [ ] [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 2026-06-24*
 
 ---
@@ -21,7 +20,8 @@
 
 <!-- formato: - [~] [SISTEMA] Descrição — *iniciada em YYYY-MM-DD* -->
 
-<!-- nenhuma tarefa em andamento no momento -->
+- [~] [Municípios] Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) — *iniciada em 2026-06-25*
+    - 25/06: aviso enviado aos municípios integrados sobre bloqueio de acesso remoto; orientados a acionar técnico de TI local e entrar em contato
 
 ---
 
