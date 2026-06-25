@@ -66,6 +66,7 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 | `fecha tarefa: [desc]` | Marca como concluído em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
 | `gera relatório mensal` | Roda `python scripts/gera-relatorio.py [--mes YYYY-MM]` — gera MD (portal) + PPTX (reports/) |
 | `status` | Mostra tarefas abertas + últimos incidentes |
+| `registra conhecimento: [desc]` | Salva informação sobre o ambiente (equipamentos, servidores, fluxos, comportamentos) na memória persistente e, quando aplicável, atualiza ou cria documentação em `./portal/docs/procedimentos/` ou `./docs/procedimentos/` |
 
 ## Scripts de automação
 
