@@ -61,9 +61,9 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 
 | Comando | Ação |
 |---|---|
-| `registra incidente: [desc]` | Cria `./docs/incidentes/YYYY-MM-DD_titulo.md` |
-| `atualiza tarefa: [desc]` | Adiciona item em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
-| `fecha tarefa: [desc]` | Marca como concluído em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
+| `registra incidente: [desc]` | Cria `./docs/incidentes/YYYY-MM-DD_titulo.md` com próximo ID (I#) |
+| `atualiza tarefa: [T# ou desc]` | Atualiza tarefa por ID ou descrição em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
+| `fecha tarefa: [T# ou desc]` | Marca como concluído em `./docs/tarefas.md`, depois roda `python scripts/sync-tarefas.py` |
 | `gera relatório mensal` | Roda `python scripts/gera-relatorio.py [--mes YYYY-MM]` — gera MD (portal) + PPTX (reports/) |
 | `status` | Mostra tarefas abertas + últimos incidentes |
 | `registra conhecimento: [desc]` | Salva informação sobre o ambiente (equipamentos, servidores, fluxos, comportamentos) na memória persistente e, quando aplicável, atualiza ou cria documentação em `./portal/docs/procedimentos/` ou `./docs/procedimentos/` |

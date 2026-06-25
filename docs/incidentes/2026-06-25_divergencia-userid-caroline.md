@@ -1,4 +1,4 @@
-# Divergência de user-id entre Shift e MV — Caroline
+# I2 — Divergência de user-id entre Shift e MV — Caroline
 
 - **Data:** 2026-06-25
 - **Status:** Aberto (aguardando desenvolvimento)

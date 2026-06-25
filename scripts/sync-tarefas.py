@@ -89,6 +89,12 @@ def parse_task_line(line):
     status = {"x": "done", "~": "in_progress", " ": "open"}.get(mark, "open")
     rest = line[len(checkbox_match.group(0)):]
 
+    task_id = None
+    id_match = re.match(r"(T\d+)\s+", rest)
+    if id_match:
+        task_id = id_match.group(1)
+        rest = rest[len(id_match.group(0)):]
+
     cat_match = re.match(r"\[([^\]]+)\]\s*", rest)
     category = "Shift LIS"
     if cat_match:
@@ -117,6 +123,7 @@ def parse_task_line(line):
         "description": desc,
         "date": date,
         "schedule": schedule,
+        "task_id": task_id,
         "raw": line,
     }
 
@@ -167,10 +174,11 @@ def format_portal_task(task):
     else:
         date_str = ""
 
+    tid = f"{task['task_id']} " if task.get("task_id") else ""
     if portal_cat and portal_cat != "Shift LIS":
-        return f"- [x] **[{portal_cat}]** {desc} — *concluída em {date_str}*"
+        return f"- [x] {tid}**[{portal_cat}]** {desc} — *concluída em {date_str}*"
     else:
-        return f"- [x] {desc} — *concluída em {date_str}*"
+        return f"- [x] {tid}{desc} — *concluída em {date_str}*"
 
 
 def generate_month_page(year, month, tasks):
@@ -211,7 +219,8 @@ def generate_index(abertas, em_andamento, months_summary):
         cat = t["category"]
         sched = f" — <span class=\"status-agendada\">agendado para {t['schedule']}</span>" if t["schedule"] else ""
         date_info = f" — *aberta em {t['date'][8:10]}/{t['date'][5:7]}*" if t.get("date") else ""
-        lines.append(f"- [ ] **[{cat}]** {desc}{sched}{date_info}")
+        tid = f"{t['task_id']} " if t.get("task_id") else ""
+        lines.append(f"- [ ] {tid}**[{cat}]** {desc}{sched}{date_info}")
 
     lines.extend(["", "## Em Andamento", ""])
 
@@ -219,7 +228,8 @@ def generate_index(abertas, em_andamento, months_summary):
         desc = t["description"]
         cat = t["category"]
         date_info = f" — *iniciada em {t['date'][8:10]}/{t['date'][5:7]}*" if t.get("date") else ""
-        lines.append(f"- [x] **[{cat}]** {desc}{date_info}")
+        tid = f"{t['task_id']} " if t.get("task_id") else ""
+        lines.append(f"- [x] {tid}**[{cat}]** {desc}{date_info}")
 
     lines.extend(["", "## Histórico por Mês", ""])
 

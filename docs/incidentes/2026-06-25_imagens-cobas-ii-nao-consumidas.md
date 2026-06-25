@@ -1,4 +1,4 @@
-# Imagens Cobas 6500 II não consumidas — 15/05/2026
+# I3 — Imagens Cobas 6500 II não consumidas — 15/05/2026
 
 - **Data do incidente:** 2026-05-15
 - **Data do registro:** 2026-06-25
