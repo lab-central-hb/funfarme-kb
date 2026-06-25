@@ -12,7 +12,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
     | Indicador | Valor |
     |-----------|-------|
-    | Tarefas abertas | 1 |
+    | Tarefas abertas | 2 |
     | Em andamento | 0 |
     | Concluídas em junho | 26 |
     | Incidentes abertos | 1 |
@@ -24,6 +24,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
 | T127 | Shift Automação | MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado | 19/06 |
+| T136 | Rede/Servidores | Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx | 25/06 |
 <!-- END_TAREFAS -->
 
 ### Incidentes

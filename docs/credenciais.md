@@ -1,7 +1,14 @@
 # Credenciais e Acessos Internos
 
 > Documento interno — NÃO publicar no portal.
-> Última atualização: 2026-06-24
+> Última atualização: 2026-06-25
+
+## Cofre de Senhas
+
+- **Software:** KeePass
+- **Arquivo:** `D:\santana\cofre\funfarme-ti.kdbx`
+- **Responsável:** Pedro Santana
+- Todas as referências a "*(senha em cofre local)*" neste documento apontam para este arquivo.
 
 ---
 
