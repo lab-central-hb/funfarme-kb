@@ -44,3 +44,4 @@ O arquivo `CLAUDE.md` na raiz configura o Claude Code como assistente técnico d
 | `fecha tarefa: [desc]` | Marca como concluído e sincroniza portal |
 | `gera relatório mensal` | Gera MD + PPTX do mês |
 | `status` | Mostra tarefas abertas e últimos incidentes |
+| `registra conhecimento: [desc]` | Salva informação do ambiente na memória e na documentação |
