@@ -12,9 +12,9 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
     | Indicador | Valor |
     |-----------|-------|
-    | Tarefas abertas | 3 |
-    | Em andamento | 1 |
-    | Concluídas em junho | 23 |
+    | Tarefas abertas | 2 |
+    | Em andamento | 0 |
+    | Concluídas em junho | 25 |
     | Incidentes abertos | 1 |
 <!-- END_STATUS -->
 
@@ -24,14 +24,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
 | T127 | Shift Automação | MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado | 19/06 |
-| T52 | Shift LIS | Máscara C216 — novo procedimento, enviar e-mail | 13/04 |
 | T128 | Rede/Servidores | Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) | 24/06 |
-
-**Em andamento:**
-
-| ID | Sistema | Descrição | Desde |
-|----|---------|-----------|-------|
-| T129 | Municípios | Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) | 25/06 |
 <!-- END_TAREFAS -->
 
 ### Incidentes
