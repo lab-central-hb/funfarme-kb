@@ -10,7 +10,6 @@
 <!-- formato: - [ ] T# [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
 - [ ] T127 [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
-- [ ] T128 [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 2026-06-24*
 
 ---
 
@@ -120,6 +119,7 @@
 - [x] T135 [Shift LIS] Máscara Metil. Russell P.G. — painel genético Pardini — *concluída em 2026-06-25*
 - [x] T52 [Shift LIS] Máscara C216 — novo procedimento — *concluída em 2026-06-25*
 - [x] T129 [Municípios] Capacitar técnicos de TI dos municípios para suporte autônomo — grupo informado sobre como prosseguir perante ao bloqueio de acessos remotos — *concluída em 2026-06-25*
+- [x] T128 [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA — equipe de redes avaliará riscos; acesso remoto permanece bloqueado por enquanto — *concluída em 2026-06-25*
 
 ### Abril 2026
 
