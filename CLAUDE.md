@@ -77,6 +77,16 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 
 Após editar `docs/tarefas.md`, **sempre** rodar `python scripts/sync-tarefas.py` para manter o portal sincronizado.
 
+## IDs automáticos
+
+### Tarefas (T#)
+- Ao criar nova tarefa: ler `<!-- próximo ID: T### -->` em `docs/tarefas.md`, usar esse ID e incrementar o comentário.
+- Formato: `- [ ] T136 [SISTEMA] Descrição — *aberta em YYYY-MM-DD*`
+
+### Incidentes (I#)
+- Ao criar novo incidente: ler `<!-- próximo ID: I# -->` em `docs/incidentes/index.md`, usar esse ID no título (`# I4 — Título`) e incrementar o comentário.
+- Formato do arquivo: `docs/incidentes/YYYY-MM-DD_titulo.md`
+
 ## Tokens — boas práticas
 
 - `/clear` ao trocar de assunto.

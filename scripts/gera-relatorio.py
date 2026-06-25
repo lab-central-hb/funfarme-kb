@@ -72,6 +72,12 @@ def parse_task(line):
     status = {"x": "done", "~": "in_progress", " ": "open"}.get(mark, "open")
     rest = line[len(checkbox_match.group(0)):]
 
+    task_id = None
+    id_match = re.match(r"(T\d+)\s+", rest)
+    if id_match:
+        task_id = id_match.group(1)
+        rest = rest[len(id_match.group(0)):]
+
     cat_match = re.match(r"\[([^\]]+)\]\s*", rest)
     category = "Shift LIS"
     if cat_match:

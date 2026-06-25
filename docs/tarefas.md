@@ -9,7 +9,6 @@
 
 <!-- formato: - [ ] T# [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
-- [x] T104 [Municípios] Votuporanga — instalar sistema Shift na cidade — *aberta em 2026-05-27* (agendado para 01/06)
 - [ ] T127 [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
 - [ ] T52 [Shift LIS] Máscara C216 — novo procedimento, enviar e-mail — *aberta em 2026-04-13*
 - [ ] T128 [Rede/Servidores] Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) — *aberta em 2026-06-24*
@@ -89,6 +88,7 @@
 
 #### Semana 1 (01–06/06)
 
+- [x] T104 [Municípios] Votuporanga — instalar sistema Shift na cidade — *concluída em 2026-06-01*
 - [x] T111 [Shift LIS] Máscara SDHEA — *concluída em 2026-06-01*
 - [x] T112 [Shift LIS] Máscara ANFETUR — *concluída em 2026-06-01*
 - [x] T113 [Shift LIS] Máscara PQUINASE — *concluída em 2026-06-03*
