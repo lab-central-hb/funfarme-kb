@@ -2,9 +2,51 @@
 
 Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Fundação Faculdade Regional de Medicina), São José do Rio Preto — SP.
 
-Este portal reúne informações operacionais sobre infraestrutura, sistemas, equipamentos e atividades da equipe de TI do laboratório.
+---
+
+## Painel de Status
+
+<!-- gerado por scripts/sync-landing.py — não editar manualmente -->
+<!-- BEGIN_STATUS -->
+!!! info "Atualizado em 25/06/2026"
+
+    | Indicador | Valor |
+    |-----------|-------|
+    | Tarefas abertas | 3 |
+    | Em andamento | 1 |
+    | Concluídas em junho | 23 |
+    | Incidentes abertos | 2 |
+<!-- END_STATUS -->
+
+### Tarefas Abertas
+
+<!-- BEGIN_TAREFAS -->
+| ID | Sistema | Descrição | Desde |
+|----|---------|-----------|-------|
+| T127 | Shift Automação | MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado | 19/06 |
+| T52 | Shift LIS | Máscara C216 — novo procedimento, enviar e-mail | 13/04 |
+| T128 | Rede/Servidores | Avaliar alternativa de acesso remoto para Shift ao SRV-AUTOMA (pós-bloqueio AnyDesk) | 24/06 |
+
+**Em andamento:**
+
+| ID | Sistema | Descrição | Desde |
+|----|---------|-----------|-------|
+| T129 | Municípios | Capacitar técnicos de TI dos municípios para suporte autônomo (pós-bloqueio de acesso remoto externo) | 25/06 |
+<!-- END_TAREFAS -->
+
+### Incidentes
+
+<!-- BEGIN_INCIDENTES -->
+| ID | Data | Título | Status |
+|----|------|--------|--------|
+| I1 | 16/06 | Bloqueio de acesso remoto externo | <span class="status-concluida">Registrado</span> |
+| I2 | 25/06 | Divergência user-id Shift↔MV — Caroline | <span class="status-aberta">Aberto</span> |
+| I3 | 25/06 | Imagens Cobas 6500 II não consumidas | <span class="status-andamento">Em análise</span> |
+<!-- END_INCIDENTES -->
 
 ---
+
+## Navegação
 
 <div class="grid cards" markdown>
 
@@ -28,7 +70,7 @@ Este portal reúne informações operacionais sobre infraestrutura, sistemas, eq
 
     ---
 
-    Backlog de atividades: abertas, em andamento e concluídas.
+    Backlog completo: abertas, em andamento e histórico mensal.
 
     [:octicons-arrow-right-24: Ver tarefas](tarefas/index.md)
 
@@ -65,16 +107,3 @@ Este portal reúne informações operacionais sobre infraestrutura, sistemas, eq
     [:octicons-arrow-right-24: Ver procedimentos](procedimentos/index.md)
 
 </div>
-
----
-
-## Status Rápido
-
-!!! info "Atualizado em 24/06/2026"
-
-    | Indicador | Valor |
-    |-----------|-------|
-    | Tarefas abertas | 4 |
-    | Tarefas em andamento | 4 |
-    | Concluídas em maio | 41 |
-    | Equipamentos catalogados | 25 |

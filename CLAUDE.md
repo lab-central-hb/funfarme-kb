@@ -73,9 +73,10 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 | Script | Função | Quando usar |
 |---|---|---|
 | `scripts/sync-tarefas.py` | Sincroniza `docs/tarefas.md` → `portal/docs/tarefas/` | Após qualquer edição em tarefas.md |
+| `scripts/sync-landing.py` | Atualiza painel de status da landing page do portal | Após editar tarefas ou incidentes |
 | `scripts/gera-relatorio.py` | Gera relatório mensal (MD + PPTX) | Comando `gera relatório mensal` ou fim do mês |
 
-Após editar `docs/tarefas.md`, **sempre** rodar `python scripts/sync-tarefas.py` para manter o portal sincronizado.
+Após editar `docs/tarefas.md` ou `docs/incidentes/`, **sempre** rodar `python scripts/sync-tarefas.py` e `python scripts/sync-landing.py` para manter o portal sincronizado.
 
 ## IDs automáticos
 

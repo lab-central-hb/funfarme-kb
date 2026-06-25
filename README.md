@@ -27,6 +27,7 @@ Documentação pública acessível em **[lab-central-hb.github.io/funfarme-kb](h
 | Script | Função |
 |---|---|
 | `scripts/sync-tarefas.py` | Sincroniza `docs/tarefas.md` → `portal/docs/tarefas/` |
+| `scripts/sync-landing.py` | Atualiza painel de status (tarefas + incidentes) na landing page |
 | `scripts/gera-relatorio.py` | Gera relatório mensal (MD no portal + PPTX em `reports/`) |
 | `scripts/cria-template-pptx.py` | Cria template PPTX com branding FUNFARME |
 | `scripts/concatena_sheets.py` | Concatena planilhas de dados |
