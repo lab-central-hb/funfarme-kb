@@ -6,11 +6,11 @@ O Shift LIS (Laboratory Information System) é o sistema principal do laboratór
 
 | Sistema | URL |
 |---------|-----|
-| **LIS** | `hb.shiftcloud.com.br/main/app` |
-| **Etiquetas Lab** | `hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls` |
-| **Resultados de Exames** | `hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO\\&sigla` |
-| **Integração** | `integracao.shiftcloud.com.br/shift/integracao/hospitaldebase/mv/s00.iu.Menu.cls` |
-| **Automação** | `automacao.hospitaldebase.com.br/shift/automacao/hospbase/s00.iu.Menu.cls` |
+| **LIS** | [hb.shiftcloud.com.br/main/app](https://hb.shiftcloud.com.br/main/app) |
+| **Etiquetas Lab** | [hb.shiftcloud.com.br/…/s00.iu.Login2.cls](https://hb.shiftcloud.com.br/shift/lis/hb/elis/s00.iu.Login2.cls) |
+| **Resultados de Exames** | [hb.shiftcloud.com.br/…/s01.iu.web.Login.cls](https://hb.shiftcloud.com.br/shift/lis/hb/elis/s01.iu.web.Login.cls?config=UNICO&sigla) |
+| **Integração** | [integracao.shiftcloud.com.br/…/s00.iu.Menu.cls](https://integracao.shiftcloud.com.br/shift/integracao/hospitaldebase/mv/s00.iu.Menu.cls) |
+| **Automação** | [automacao.hospitaldebase.com.br/…/s00.iu.Menu.cls](https://automacao.hospitaldebase.com.br/shift/automacao/hospbase/s00.iu.Menu.cls) |
 
 ## Função
 
