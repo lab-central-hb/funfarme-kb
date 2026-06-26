@@ -9,7 +9,6 @@
 
 <!-- formato: - [ ] T# [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
-- [ ] T127 [Shift Automação] MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — *aberta em 2026-06-19* (agendado para 24/06)
 - [ ] T136 [Rede/Servidores] Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx — *aberta em 2026-06-25*
 
 ---
@@ -18,7 +17,7 @@
 
 <!-- formato: - [~] T# [SISTEMA] Descrição — *iniciada em YYYY-MM-DD* -->
 
-<!-- nenhuma tarefa em andamento no momento -->
+- [~] T127 [Shift Automação] MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) — *iniciada em 2026-06-19*
 
 ---
 

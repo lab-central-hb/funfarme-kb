@@ -12,10 +12,10 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
     | Indicador | Valor |
     |-----------|-------|
-    | Tarefas abertas | 2 |
-    | Em andamento | 0 |
+    | Tarefas abertas | 1 |
+    | Em andamento | 1 |
     | Concluídas em junho | 26 |
-    | Incidentes abertos | 2 |
+    | Incidentes abertos | 1 |
 <!-- END_STATUS -->
 
 ### Tarefas Abertas
@@ -23,8 +23,13 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 <!-- BEGIN_TAREFAS -->
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
-| T127 | Shift Automação | MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado | 19/06 |
 | T136 | Rede/Servidores | Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx | 25/06 |
+
+**Em andamento:**
+
+| ID | Sistema | Descrição | Desde |
+|----|---------|-----------|-------|
+| T127 | Shift Automação | MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) | 19/06 |
 <!-- END_TAREFAS -->
 
 ### Incidentes
@@ -33,7 +38,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | ID | Data | Título | Status |
 |----|------|--------|--------|
 | I1 | 16/06 | Bloqueio de acesso remoto externo | <span class="status-concluida">Registrado</span> |
-| I2 | 25/06 | Divergência user-id Shift↔MV — Caroline | <span class="status-aberta">Aberto</span> |
+| I2 | 25/06 | Divergência user-id Shift↔MV — Caroline | <span class="status-concluida">Resolvido</span> |
 | I3 | 25/06 | Imagens Cobas 6500 II não consumidas | <span class="status-concluida">Registrado</span> |
 | I4 | 25/06 | Queda geral do Shift LIS | <span class="status-aberta">Aberto</span> |
 <!-- END_INCIDENTES -->

@@ -4,11 +4,11 @@ Backlog de atividades da equipe de TI do laboratório.
 
 ## Abertas
 
-- [ ] T127 **[Shift Automação]** MAX ION 800 — preparação para testes de novo analisador de eletrólitos; verificar sítio de instalação e contatar cliente com interfaceamento configurado — <span class="status-agendada">agendado para 24/06</span> — *aberta em 19/06*
 - [ ] T136 **[Rede/Servidores]** Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx — *aberta em 25/06*
 
 ## Em Andamento
 
+- [x] T127 **[Shift Automação]** MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) — *iniciada em 19/06*
 
 ## Histórico por Mês
 
