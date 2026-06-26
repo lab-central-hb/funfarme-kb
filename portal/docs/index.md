@@ -15,7 +15,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
     | Tarefas abertas | 2 |
     | Em andamento | 0 |
     | Concluídas em junho | 26 |
-    | Incidentes abertos | 1 |
+    | Incidentes abertos | 2 |
 <!-- END_STATUS -->
 
 ### Tarefas Abertas
@@ -35,6 +35,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | I1 | 16/06 | Bloqueio de acesso remoto externo | <span class="status-concluida">Registrado</span> |
 | I2 | 25/06 | Divergência user-id Shift↔MV — Caroline | <span class="status-aberta">Aberto</span> |
 | I3 | 25/06 | Imagens Cobas 6500 II não consumidas | <span class="status-concluida">Registrado</span> |
+| I4 | 25/06 | Queda geral do Shift LIS | <span class="status-aberta">Aberto</span> |
 <!-- END_INCIDENTES -->
 
 ---
@@ -98,5 +99,13 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
     Guias operacionais, troubleshooting e checklists de instalação.
 
     [:octicons-arrow-right-24: Ver procedimentos](procedimentos/index.md)
+
+- :material-alert-circle-outline:{ .lg .middle } **Incidentes**
+
+    ---
+
+    Registro de incidentes de TI e seu status de resolução.
+
+    [:octicons-arrow-right-24: Ver incidentes](incidentes/index.md)
 
 </div>
