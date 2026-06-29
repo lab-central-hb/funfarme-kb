@@ -9,7 +9,6 @@
 
 <!-- formato: - [ ] T# [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
-- [ ] T136 [Rede/Servidores] Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx — *aberta em 2026-06-25*
 
 ---
 
@@ -24,7 +23,14 @@
 ## Concluídas (mês atual)
 
 <!-- formato: - [x] T# [SISTEMA] Descrição — *concluída em YYYY-MM-DD* -->
-<!-- próximo ID: T137 -->
+<!-- próximo ID: T140 -->
+
+#### Semana 5 (29/06)
+
+- [x] T136 [Rede/Servidores] Cofre KeePass criado e senhas de docs/credenciais.md armazenadas — *concluída em 2026-06-29*
+- [x] T137 [Shift Integração] De/para antimicrobiano — Isoniazida (código Shift 635 → código MV 231) — *concluída em 2026-06-29*
+- [x] T138 [Shift Integração] Criação da unidade de coleta "AMB CENTRO DE TRATAMENTO LABIOPALATAL" e de/para de integração (código Shift 423 → código MV 1230) — *concluída em 2026-06-29*
+- [x] T139 [Shift Automação] CMV PCR (biomol) — tradução automática de resultado negativo: "-" → "Negativo", eliminando necessidade de correção manual pelos colaboradores — *concluída em 2026-06-29*
 
 ### Maio 2026
 

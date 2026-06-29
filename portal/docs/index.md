@@ -8,13 +8,13 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
 <!-- gerado por scripts/sync-landing.py — não editar manualmente -->
 <!-- BEGIN_STATUS -->
-!!! info "Atualizado em 25/06/2026"
+!!! info "Atualizado em 29/06/2026"
 
     | Indicador | Valor |
     |-----------|-------|
-    | Tarefas abertas | 1 |
+    | Tarefas abertas | 0 |
     | Em andamento | 1 |
-    | Concluídas em junho | 26 |
+    | Concluídas em junho | 30 |
     | Incidentes abertos | 1 |
 <!-- END_STATUS -->
 
@@ -23,7 +23,6 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 <!-- BEGIN_TAREFAS -->
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
-| T136 | Rede/Servidores | Criar cofre KeePass e migrar todas as senhas de docs/credenciais.md para o arquivo .kdbx | 25/06 |
 
 **Em andamento:**
 
