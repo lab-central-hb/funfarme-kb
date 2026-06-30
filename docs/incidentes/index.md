@@ -1,6 +1,6 @@
 # Incidentes
 
-<!-- próximo ID: I5 -->
+<!-- próximo ID: I6 -->
 
 | ID | Data | Título | Status |
 |----|------|--------|--------|
@@ -8,3 +8,4 @@
 | I2 | 2026-06-25 | [Divergência user-id Shift↔MV — Caroline](2026-06-25_divergencia-userid-caroline.md) | Resolvido |
 | I3 | 2026-06-25 | [Imagens Cobas 6500 II não consumidas](2026-06-25_imagens-cobas-ii-nao-consumidas.md) | Registrado |
 | I4 | 2026-06-25 | [Queda geral do Shift LIS](2026-06-25_queda-geral-shift-lis.md) | Aberto |
+| I5 | 2026-06-30 | [Erros de exportação por falta de de/para de antibiogramas](2026-06-30_erros-exportacao-antibiograma-defpara.md) | Resolvido |
