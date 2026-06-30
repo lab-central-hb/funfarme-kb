@@ -12,10 +12,10 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
     | Indicador | Valor |
     |-----------|-------|
-    | Tarefas abertas | 2 |
+    | Tarefas abertas | 0 |
     | Em andamento | 1 |
-    | Concluídas em junho | 35 |
-    | Incidentes abertos | 1 |
+    | Concluídas em junho | 37 |
+    | Incidentes abertos | 0 |
 <!-- END_STATUS -->
 
 ### Tarefas Abertas
@@ -23,14 +23,12 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 <!-- BEGIN_TAREFAS -->
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
-| T140 | Shift Integração | De/para antibiograma — Imipenem (código Shift IPM4 → código MV 215) | 30/06 |
-| T141 | Shift Integração | De/para antibiograma — antimicrobiano IMR (código Shift IMR → código MV 551) | 30/06 |
 
 **Em andamento:**
 
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
-| T127 | Shift Automação | MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) | 19/06 |
+| T127 | Shift Automação | MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento | 19/06 |
 <!-- END_TAREFAS -->
 
 ### Incidentes
@@ -41,7 +39,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | I1 | 16/06 | Bloqueio de acesso remoto externo | <span class="status-concluida">Registrado</span> |
 | I2 | 25/06 | Divergência user-id Shift↔MV — Caroline | <span class="status-concluida">Resolvido</span> |
 | I3 | 25/06 | Imagens Cobas 6500 II não consumidas | <span class="status-concluida">Registrado</span> |
-| I4 | 25/06 | Queda geral do Shift LIS | <span class="status-aberta">Aberto</span> |
+| I4 | 25/06 | Queda geral do Shift LIS | <span class="status-concluida">Resolvido</span> |
 | I5 | 30/06 | Erros de exportação por falta de de/para de antibiogramas | <span class="status-concluida">Resolvido</span> |
 <!-- END_INCIDENTES -->
 

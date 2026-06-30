@@ -9,8 +9,6 @@
 
 <!-- formato: - [ ] T# [SISTEMA] Descrição — *aberta em YYYY-MM-DD* -->
 
-- [ ] T140 [Shift Integração] De/para antibiograma — Imipenem (código Shift IPM4 → código MV 215) — *aberta em 2026-06-30*
-- [ ] T141 [Shift Integração] De/para antibiograma — antimicrobiano IMR (código Shift IMR → código MV 551) — *aberta em 2026-06-30*
 
 ---
 
@@ -18,7 +16,7 @@
 
 <!-- formato: - [~] T# [SISTEMA] Descrição — *iniciada em YYYY-MM-DD* -->
 
-- [~] T127 [Shift Automação] MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) — *iniciada em 2026-06-19*
+- [~] T127 [Shift Automação] MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento — *iniciada em 2026-06-19*
 
 ---
 
@@ -33,6 +31,8 @@
 - [x] T137 [Shift Integração] De/para antimicrobiano — Isoniazida (código Shift 635 → código MV 231) — *concluída em 2026-06-29*
 - [x] T138 [Shift Integração] Criação da unidade de coleta "AMB CENTRO DE TRATAMENTO LABIOPALATAL" e de/para de integração (código Shift 423 → código MV 1230) — *concluída em 2026-06-29*
 - [x] T139 [Shift Automação] CMV PCR (biomol) — tradução automática de resultado negativo: "-" → "Negativo", eliminando necessidade de correção manual pelos colaboradores — *concluída em 2026-06-29*
+- [x] T140 [Shift Integração] De/para antibiograma — Imipenem (código Shift IPM4 → código MV 215) — *concluída em 2026-06-30*
+- [x] T141 [Shift Integração] De/para antibiograma — antimicrobiano IMR (código Shift IMR → código MV 551) — *concluída em 2026-06-30*
 - [x] T142 [Shift Integração] De/para resultado de log Hepatite C — "0.0" → "-" — *concluída em 2026-06-30*
 - [x] T143 [Shift Integração] SDHEA — rota reconfigurada de Apoio (provisório) para rota interna após chegada de novos kits — *concluída em 2026-06-30*
 - [x] T144 [Shift Cadastro] Exame e máscara criados — RECEPTRA (Shift 2371 → MV 2491), campo formatado; req. Ana Paula Galdiano — Kauã — *concluída em 2026-06-29*

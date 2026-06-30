@@ -4,18 +4,16 @@ Backlog de atividades da equipe de TI do laboratório.
 
 ## Abertas
 
-- [ ] T140 **[Shift Integração]** De/para antibiograma — Imipenem (código Shift IPM4 → código MV 215) — *aberta em 30/06*
-- [ ] T141 **[Shift Integração]** De/para antibiograma — antimicrobiano IMR (código Shift IMR → código MV 551) — *aberta em 30/06*
 
 ## Em Andamento
 
-- [x] T127 **[Shift Automação]** MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; preparando infraestrutura para interfaceamento (previsão: semana de 30/06) — *iniciada em 19/06*
+- [x] T127 **[Shift Automação]** MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento — *iniciada em 19/06*
 
 ## Histórico por Mês
 
 | Mês | Concluídas |
 |-----|-----------|
-| [Junho 2026](2026-06.md) | 35 |
+| [Junho 2026](2026-06.md) | 37 |
 | [Maio 2026](2026-05.md) | 41 |
 | [Abril 2026](2026-04.md) | 20 |
 | [Março 2026](2026-03.md) | 26 |

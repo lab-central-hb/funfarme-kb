@@ -1,8 +1,9 @@
 # I4 — Queda geral do Shift LIS
 
 **Data:** 2026-06-25
-**Início:** 20:34
-**Status:** Aberto — em aguardo
+**Início:** ~tarde (25/06/2026)
+**Duração:** ~1h 30min
+**Status:** Resolvido
 
 ## Descrição
 
@@ -12,9 +13,7 @@ Queda geral do sistema Shift LIS afetando o HB e demais clientes da Shift (probl
 
 - Pedro entrou em contato com a Shift.
 - Shift confirmou ciência do problema e informou que está tratando com urgência.
-- Sem previsão de solução até o momento.
 
-## Próximos passos
+## Resolução
 
-- Aguardar retorno da Shift com previsão de restabelecimento.
-- Atualizar incidente quando o sistema for reestabelecido.
+Sistema reestabelecido após aproximadamente 1h 30min de indisponibilidade. Causa no lado do fornecedor (Shift).
