@@ -8,6 +8,7 @@ Backlog de atividades da equipe de TI do laboratório.
 ## Em Andamento
 
 - [x] T127 **[Shift Automação]** MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento — *iniciada em 19/06*
+- [x] T147 **[Shift Integração]** Integração com Apoio Álvaro — 2 O.S. teste criadas (39 procedimentos no total); de/para de diversos exames configurado pela Ariadne (Shift); setor de execução "APOIO ALVARO" criado; em fase de testes e validação — *iniciada em 01/07*
 
 ## Histórico por Mês
 

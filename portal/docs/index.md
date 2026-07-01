@@ -13,8 +13,8 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
     | Indicador | Valor |
     |-----------|-------|
     | Tarefas abertas | 0 |
-    | Em andamento | 1 |
-    | Concluídas em junho | 37 |
+    | Em andamento | 2 |
+    | Concluídas em julho | 0 |
     | Incidentes abertos | 0 |
 <!-- END_STATUS -->
 
@@ -29,6 +29,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 | ID | Sistema | Descrição | Desde |
 |----|---------|-----------|-------|
 | T127 | Shift Automação | MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento | 19/06 |
+| T147 | Shift Integração | Integração com Apoio Álvaro — 2 O.S. teste criadas (39 procedimentos no total); de/para de diversos exames configurado pela Ariadne (Shift); setor de execução "APOIO ALVARO" criado; em fase de testes e validação | 01/07 |
 <!-- END_TAREFAS -->
 
 ### Incidentes

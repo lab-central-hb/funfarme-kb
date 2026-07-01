@@ -17,13 +17,14 @@
 <!-- formato: - [~] T# [SISTEMA] Descrição — *iniciada em YYYY-MM-DD* -->
 
 - [~] T127 [Shift Automação] MAX ION 800 — equipamento recebido; testes de controle e treinamento com equipe da bioquímica concluídos; aguardando assinatura de protocolo/pagamento pela Shift para prosseguir com interfaceamento — *iniciada em 2026-06-19*
+- [~] T147 [Shift Integração] Integração com Apoio Álvaro — 2 O.S. teste criadas (39 procedimentos no total); de/para de diversos exames configurado pela Ariadne (Shift); setor de execução "APOIO ALVARO" criado; em fase de testes e validação — *iniciada em 2026-07-01*
 
 ---
 
 ## Concluídas (mês atual)
 
 <!-- formato: - [x] T# [SISTEMA] Descrição — *concluída em YYYY-MM-DD* -->
-<!-- próximo ID: T147 -->
+<!-- próximo ID: T148 -->
 
 #### Semana 5 (29/06)
 
