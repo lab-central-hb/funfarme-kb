@@ -6,6 +6,33 @@ Guias operacionais e soluções para o dia a dia do laboratório.
 
 ## Shift LIS — Criação de Máscara
 
+### Checklist do fluxo completo
+
+Visão geral do que precisa ser feito (não substitui o passo a passo técnico abaixo, é só para não perder nenhuma etapa do processo):
+
+- [ ] Criar máscara nova na Shift
+- [ ] Enviar para validação (Jean M. Dias)
+- [ ] Ativar ou tornar padrão (sempre perguntar se pode tornar padrão antes)
+- [ ] Criar versão do MV compatível com a nova máscara na Shift
+- [ ] Fazer de/para de procedimentos
+- [ ] Fazer de/para de máscara
+- [ ] APOIO — Checar exame referente e sub-exames
+- [ ] APOIO — Fazer de/para de apoio
+- [ ] AUTOMAÇÃO — Fazer de/para de automação (para exames realizados pelos eqp. do lab)
+- [ ] Definição de preço (para novos procedimentos, sempre definir preço [0,000; 100%])
+- [ ] Enviar e-mail de confirmação
+
+### Assinaturas de laboratórios de apoio
+
+Texto padrão para o campo **Notas de laudo** (fonte Courier New, tamanho 8 — ver passo 21) quando o exame é realizado por laboratório de apoio:
+
+| Laboratório | CNES | Texto da assinatura |
+|---|---|---|
+| Hermes Pardini | 3184676 | `EXAME REALIZADO PELO LABORATORIO DE APOIO HERMES PARDINI, CNES: 3184676` |
+| DB — Diagnósticos do Brasil | 2867192 | `EXAME REALIZADO PELO LABORATORIO DB - DIAGNÓSTICOS DO BRASIL, CNES 2867192` |
+| Fleury | 3066746 | `EXAME REALIZADO PELO LABORATORIO FLEURY, CNES: 3066746` |
+| Instituto Adolfo Lutz | 2091364 | `EXAME REALIZADO PELO LABORATORIO DE APOIO INSTITUTO ADOLFO LUTZ, CNES: 2091364` |
+
 ??? abstract "Passo a passo completo"
 
     1. Menu **Shift LIS > Configuração > Procedimento > Máscara**.

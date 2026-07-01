@@ -6,3 +6,4 @@ tools/
 portal/site/
 staging/
 keepass-import.csv
+__pycache__/

@@ -201,6 +201,33 @@ def generate_md_report(year, month, concluidas, pendentes, incidents):
     return "\n".join(lines)
 
 
+CATEGORY_COLORS = {
+    "Shift LIS": "00897B",
+    "Shift Integração": "00ACC1",
+    "Shift Automação": "5C6BC0",
+    "Rede/Servidores": "546E7A",
+    "Municípios": "FFA000",
+    "Shift Cadastro": "8D6E63",
+}
+DEFAULT_CATEGORY_COLOR = "78909C"
+AMBER = "F9A825"
+RED = "C62828"
+DARK_HEX = "212121"
+GRAY_HEX = "757575"
+
+
+def cat_color(category):
+    return CATEGORY_COLORS.get(category, DEFAULT_CATEGORY_COLOR)
+
+
+def fit_size(n_items):
+    """Escolhe tamanho de fonte para uma lista com marcadores, evitando overflow."""
+    for threshold, size in ((6, 18), (10, 16), (16, 14), (24, 12)):
+        if n_items <= threshold:
+            return size
+    return 11
+
+
 def replace_text_in_slide(slide, replacements):
     for shape in slide.shapes:
         if not shape.has_text_frame:
@@ -212,10 +239,90 @@ def replace_text_in_slide(slide, replacements):
                         run.text = run.text.replace(old, new)
 
 
+def find_shape(slide, name):
+    for shape in slide.shapes:
+        if shape.name == name:
+            return shape
+    return None
+
+
+def set_fill_color(slide, shape_name, color_hex):
+    from pptx.dml.color import RGBColor
+    shape = find_shape(slide, shape_name)
+    if shape is not None:
+        shape.fill.solid()
+        shape.fill.fore_color.rgb = RGBColor.from_string(color_hex)
+
+
+def _set_bullet_char(paragraph, char, color_hex):
+    from pptx.oxml.ns import qn
+    pPr = paragraph._p.get_or_add_pPr()
+    buClr = pPr.makeelement(qn("a:buClr"), {})
+    buClr.append(buClr.makeelement(qn("a:srgbClr"), {"val": color_hex}))
+    buSzPct = pPr.makeelement(qn("a:buSzPct"), {"val": "65000"})
+    buFont = pPr.makeelement(qn("a:buFont"), {"typeface": "Arial"})
+    buChar = pPr.makeelement(qn("a:buChar"), {"char": char})
+    defRPr = pPr.find(qn("a:defRPr"))
+    for el in (buClr, buSzPct, buFont, buChar):
+        if defRPr is not None:
+            defRPr.addprevious(el)
+        else:
+            pPr.append(el)
+
+
+def add_bullet_paragraph(text_frame, idx, bullet_color, space_after_pt):
+    from pptx.util import Pt
+    paragraph = text_frame.paragraphs[0] if idx == 0 else text_frame.add_paragraph()
+    paragraph.space_after = Pt(space_after_pt)
+    paragraph.line_spacing = 1.15
+    pPr = paragraph._p.get_or_add_pPr()
+    pPr.set("marL", "228600")
+    pPr.set("indent", "-228600")
+    _set_bullet_char(paragraph, "●", bullet_color)
+    return paragraph
+
+
+def add_run(paragraph, text, size_pt, color_hex, bold=False, italic=False):
+    from pptx.util import Pt
+    from pptx.dml.color import RGBColor
+    run = paragraph.add_run()
+    run.text = text
+    run.font.size = Pt(size_pt)
+    run.font.bold = bold
+    run.font.italic = italic
+    run.font.name = "Arial"
+    run.font.color.rgb = RGBColor.from_string(color_hex)
+    return run
+
+
+def write_message(text_frame, message):
+    """Escreve uma única linha sem marcador, para estados vazios (ex.: sem incidentes)."""
+    paragraph = text_frame.paragraphs[0]
+    add_run(paragraph, message, 16, GRAY_HEX, italic=True)
+
+
+def prep_text_frame(text_frame):
+    """Impede que a caixa de texto cresça além dos limites do slide (o padrão do
+    python-pptx é SHAPE_TO_FIT_TEXT, que 'empurra' o conteúdo pra fora do slide)."""
+    from pptx.enum.text import MSO_AUTO_SIZE
+    text_frame.word_wrap = True
+    text_frame.auto_size = MSO_AUTO_SIZE.NONE
+
+
+def populate_task_bullets(text_frame, tasks, bullet_color, font_size, space_after):
+    prep_text_frame(text_frame)
+    for i, t in enumerate(tasks):
+        dt = datetime.strptime(t["date"], "%Y-%m-%d")
+        paragraph = add_bullet_paragraph(text_frame, i, bullet_color, space_after)
+        add_run(paragraph, t["description"], font_size, DARK_HEX)
+        add_run(paragraph, f"   {dt.day:02d}/{dt.month:02d}", font_size - 2, GRAY_HEX, italic=True)
+
+
 def clone_slide(prs, template_slide):
     """Clone a slide from the template into the presentation."""
+    import io
     from copy import deepcopy
-    from lxml import etree
+    from pptx.oxml.ns import qn
 
     slide_layout = prs.slide_layouts[6]
     new_slide = prs.slides.add_slide(slide_layout)
@@ -226,6 +333,11 @@ def clone_slide(prs, template_slide):
 
     for shape in template_slide.shapes:
         el = deepcopy(shape._element)
+        if shape.shape_type == 13:  # PICTURE — precisa recriar a relação da imagem
+            blip = el.find(f".//{qn('a:blip')}")
+            if blip is not None:
+                _, new_rid = new_slide.part.get_or_add_image_part(io.BytesIO(shape.image.blob))
+                blip.set(qn("r:embed"), new_rid)
         new_slide.shapes._spTree.append(el)
 
     return new_slide
@@ -235,6 +347,8 @@ def generate_pptx(year, month, concluidas, pendentes, incidents):
     from pptx import Presentation
     from pptx.util import Inches, Pt
     from pptx.dml.color import RGBColor
+    from pptx.chart.data import CategoryChartData
+    from pptx.enum.chart import XL_CHART_TYPE
 
     TEMPLATE_PATH = ROOT / "reports" / "template.pptx"
 
@@ -250,15 +364,10 @@ def generate_pptx(year, month, concluidas, pendentes, incidents):
     prs.slide_width = template.slide_width
     prs.slide_height = template.slide_height
 
-    # Copy slide layouts from template
     month_name = MESES_PT[month]
     titulo_mes = f"{month_name} {year}"
     cat_counts = Counter(t["category"] for t in concluidas)
-
-    TEAL = RGBColor(0x00, 0x89, 0x7B)
-    DARK = RGBColor(0x21, 0x21, 0x21)
-    GRAY = RGBColor(0x75, 0x75, 0x75)
-    WHITE = RGBColor(0xFF, 0xFF, 0xFF)
+    cats_sorted = cat_counts.most_common()
 
     # --- Slide 0: Capa ---
     slide = clone_slide(prs, template.slides[0])
@@ -268,74 +377,118 @@ def generate_pptx(year, month, concluidas, pendentes, incidents):
         "{TOTAL_PENDENTES}": str(len(pendentes)),
         "{TOTAL_INCIDENTES}": str(len(incidents)),
     })
+    for shape_name, color_hex in (
+        ("TextBox 10", "00897B"), ("TextBox 13", AMBER), ("TextBox 16", RED),
+    ):
+        shape = find_shape(slide, shape_name)
+        for paragraph in shape.text_frame.paragraphs:
+            for run in paragraph.runs:
+                run.font.bold = True
+                run.font.color.rgb = RGBColor.from_string(color_hex)
 
-    # --- Slide 1: Resumo por categoria ---
+    # --- Slide 1: Resumo por categoria (gráfico de barras) ---
     slide = clone_slide(prs, template.slides[1])
-    cat_text = ""
-    for cat, count in cat_counts.most_common():
-        cat_text += f"{cat}: {count} tarefa{'s' if count > 1 else ''}\n"
-    cat_text += f"\nTotal: {len(concluidas)}"
-    replace_text_in_slide(slide, {
-        "{CATEGORIAS}": cat_text,
-        "{TITULO_MES}": titulo_mes,
-    })
+    replace_text_in_slide(slide, {"{TITULO_MES}": titulo_mes})
+    placeholder = find_shape(slide, "TextBox 5")
+    left, top, width, height = placeholder.left, placeholder.top, placeholder.width, placeholder.height
+    placeholder._element.getparent().remove(placeholder._element)
 
-    # --- Slide 2: Distribuição semanal ---
-    slide = clone_slide(prs, template.slides[2])
-    weeks_data = defaultdict(int)
-    for t in concluidas:
-        wn = get_week_number(t["date"], month)
-        weeks_data[wn] += 1
-    weeks_text = ""
-    for wn in sorted(weeks_data.keys()):
-        start, end = get_week_range(year, month, wn)
-        weeks_text += f"Semana {wn} ({start}–{end}): {weeks_data[wn]} tarefa{'s' if weeks_data[wn] > 1 else ''}\n"
-    replace_text_in_slide(slide, {
-        "{SEMANAS}": weeks_text,
-        "{TITULO_MES}": titulo_mes,
-    })
+    subtitle = slide.shapes.add_textbox(left, top - Pt(28), width, Pt(28))
+    add_run(subtitle.text_frame.paragraphs[0], f"Total: {len(concluidas)} tarefas concluídas", 14, GRAY_HEX)
+
+    chart_data = CategoryChartData()
+    chart_data.categories = [c for c, _ in cats_sorted]
+    chart_data.add_series("Tarefas concluídas", [n for _, n in cats_sorted])
+    graphic_frame = slide.shapes.add_chart(
+        XL_CHART_TYPE.BAR_CLUSTERED, left, top, width, height, chart_data
+    )
+    chart = graphic_frame.chart
+    chart.has_legend = False
+    chart.category_axis.reverse_order = True
+    chart.category_axis.tick_labels.font.size = Pt(14)
+    chart.category_axis.tick_labels.font.color.rgb = RGBColor.from_string(DARK_HEX)
+    chart.value_axis.visible = False
+    chart.value_axis.has_major_gridlines = False
+    plot = chart.plots[0]
+    plot.gap_width = 60
+    plot.has_data_labels = True
+    plot.data_labels.font.size = Pt(14)
+    plot.data_labels.font.bold = True
+    plot.data_labels.font.color.rgb = RGBColor.from_string(DARK_HEX)
+    series = chart.series[0]
+    for i, (cat, _) in enumerate(cats_sorted):
+        point = series.points[i]
+        point.format.fill.solid()
+        point.format.fill.fore_color.rgb = RGBColor.from_string(cat_color(cat))
 
     # --- Slides por categoria (clona slide 3 do template) ---
-    for cat, count in cat_counts.most_common():
+    COLUMN_SPLIT_THRESHOLD = 10
+    COLUMN_GAP = 365760  # ~0.4"
+
+    for cat, count in cats_sorted:
         slide = clone_slide(prs, template.slides[3])
+        set_fill_color(slide, "Rectangle 1", cat_color(cat))
+        replace_text_in_slide(slide, {
+            "{CATEGORIA_NOME}": cat,
+            "{CATEGORIA_QTD}": str(count),
+            "{TITULO_MES}": titulo_mes,
+        })
         cat_tasks = sorted(
             [t for t in concluidas if t["category"] == cat],
             key=lambda x: x["date"]
         )
-        items_text = ""
-        for t in cat_tasks:
-            dt = datetime.strptime(t["date"], "%Y-%m-%d")
-            items_text += f"• {t['description']} ({dt.day:02d}/{dt.month:02d})\n"
-        replace_text_in_slide(slide, {
-            "{CATEGORIA_NOME}": cat,
-            "{CATEGORIA_QTD}": str(count),
-            "{CATEGORIA_ITENS}": items_text.rstrip(),
-            "{TITULO_MES}": titulo_mes,
-        })
+        placeholder = find_shape(slide, "TextBox 5")
+        left, top, width, height = placeholder.left, placeholder.top, placeholder.width, placeholder.height
+
+        if len(cat_tasks) > COLUMN_SPLIT_THRESHOLD:
+            placeholder._element.getparent().remove(placeholder._element)
+            col_width = (width - COLUMN_GAP) // 2
+            mid = (len(cat_tasks) + 1) // 2
+            columns = [cat_tasks[:mid], cat_tasks[mid:]]
+            size = fit_size(mid)
+            space_after = max(4, size - 6)
+            for col_idx, col_tasks in enumerate(columns):
+                col_left = left + col_idx * (col_width + COLUMN_GAP)
+                box = slide.shapes.add_textbox(col_left, top, col_width, height)
+                populate_task_bullets(box.text_frame, col_tasks, cat_color(cat), size, space_after)
+        else:
+            text_frame = placeholder.text_frame
+            text_frame.clear()
+            size = fit_size(len(cat_tasks))
+            space_after = max(4, size - 6)
+            populate_task_bullets(text_frame, cat_tasks, cat_color(cat), size, space_after)
 
     # --- Slide: Pendências (clona slide 4) ---
     if pendentes:
         slide = clone_slide(prs, template.slides[4])
-        pend_text = ""
-        for t in pendentes:
-            pend_text += f"• [{t['category']}] {t['description']}\n"
-        replace_text_in_slide(slide, {
-            "{PENDENCIAS}": pend_text.rstrip(),
-            "{TITULO_MES}": titulo_mes,
-        })
+        set_fill_color(slide, "Rectangle 1", AMBER)
+        replace_text_in_slide(slide, {"{TITULO_MES}": titulo_mes})
+        text_frame = find_shape(slide, "TextBox 5").text_frame
+        text_frame.clear()
+        prep_text_frame(text_frame)
+        size = fit_size(len(pendentes))
+        space_after = max(4, size - 6)
+        for i, t in enumerate(pendentes):
+            paragraph = add_bullet_paragraph(text_frame, i, cat_color(t["category"]), space_after)
+            add_run(paragraph, f"[{t['category']}] ", size, cat_color(t["category"]), bold=True)
+            add_run(paragraph, t["description"], size, DARK_HEX)
 
     # --- Slide: Incidentes (clona slide 5) ---
     slide = clone_slide(prs, template.slides[5])
+    set_fill_color(slide, "Rectangle 1", RED)
+    replace_text_in_slide(slide, {"{TITULO_MES}": titulo_mes})
+    text_frame = find_shape(slide, "TextBox 5").text_frame
+    text_frame.clear()
+    prep_text_frame(text_frame)
     if incidents:
-        inc_text = ""
-        for inc in incidents:
-            inc_text += f"• {inc['date']} — {inc['title']}\n"
+        size = fit_size(len(incidents))
+        space_after = max(4, size - 6)
+        for i, inc in enumerate(incidents):
+            paragraph = add_bullet_paragraph(text_frame, i, RED, space_after)
+            add_run(paragraph, f"{inc['date']}  ", size, RED, bold=True)
+            add_run(paragraph, inc["title"], size, DARK_HEX)
     else:
-        inc_text = f"Nenhum incidente registrado em {month_name.lower()}."
-    replace_text_in_slide(slide, {
-        "{INCIDENTES}": inc_text.rstrip(),
-        "{TITULO_MES}": titulo_mes,
-    })
+        write_message(text_frame, f"Nenhum incidente registrado em {month_name.lower()}.")
 
     return prs
 
