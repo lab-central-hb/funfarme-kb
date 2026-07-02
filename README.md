@@ -46,3 +46,8 @@ O arquivo `CLAUDE.md` na raiz configura o Claude Code como assistente técnico d
 | `gera relatório mensal` | Gera MD + PPTX do mês |
 | `status` | Mostra tarefas abertas e últimos incidentes |
 | `registra conhecimento: [desc]` | Salva informação do ambiente na memória e na documentação |
+| `credenciais: [desc]` | Adiciona credenciais ao `keepass-import.csv` (gitignored) para importação no KeePass |
+
+### Acesso restrito para coworker
+
+`.claude/skills/` traz versões desses comandos como skills reais (`/registra-incidente`, `/atualiza-tarefa`, `/fecha-tarefa`, `/gera-relatorio-mensal`, `/registra-conhecimento`, `/status`), permitindo travar por nome o acesso de um coworker que só precisa registrar tarefas/incidentes. Setup completo em `docs/procedimentos/claude-code-coworker-setup.md`.
