@@ -77,7 +77,7 @@ Leia os arquivos locais antes de responder perguntas técnicas. Não invente inf
 | `scripts/sync-landing.py` | Atualiza painel de status da landing page do portal | Após editar tarefas ou incidentes |
 | `scripts/gera-relatorio.py` | Gera relatório mensal (MD + PPTX) | Comando `gera relatório mensal` ou fim do mês |
 
-Após editar `docs/tarefas.md` ou `docs/incidentes/`, **sempre** rodar `python scripts/sync-tarefas.py` e `python scripts/sync-landing.py` para manter o portal sincronizado.
+Após editar `docs/tarefas.md`, um hook já roda `sync-tarefas.py` + `sync-landing.py` automaticamente. Ao editar `docs/incidentes/` diretamente (sem hook), rodar `python scripts/sync-landing.py` manualmente. Ambos os scripts falham (exit 1) se detectarem T#/I# duplicado.
 
 ## IDs automáticos
 
@@ -88,6 +88,10 @@ Após editar `docs/tarefas.md` ou `docs/incidentes/`, **sempre** rodar `python s
 ### Incidentes (I#)
 - Ao criar novo incidente: ler `<!-- próximo ID: I# -->` em `docs/incidentes/index.md`, usar esse ID no título (`# I4 — Título`) e incrementar o comentário.
 - Formato do arquivo: `docs/incidentes/YYYY-MM-DD_titulo.md`
+
+### Trabalho em múltiplas branches (Pedro + coworker)
+- Antes de criar um T# ou I# novo, sincronizar com `main` (`git fetch origin && git merge origin/main`) para ler o `próximo ID` mais atual e evitar colisão com IDs criados em paralelo por outra pessoa.
+- Se mesmo assim houver colisão (dois IDs iguais vindos de branches diferentes), o conflito de merge na linha do comentário `próximo ID` e a validação dos scripts de sync pegam o erro — renumerar manualmente o item duplicado antes de commitar.
 
 ## Tokens — boas práticas
 

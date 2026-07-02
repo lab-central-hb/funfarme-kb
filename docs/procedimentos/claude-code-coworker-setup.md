@@ -23,15 +23,17 @@ restrições.
    `lab-central-hb/funfarme-kb` (Settings → Collaborators → Add people),
    com permissão de escrita (Write).
 2. **Proteger a branch `main`** (Settings → Branches → Add branch protection
-   rule, pattern `main`):
+   rule, pattern `main`) — configurado assim:
    - ✅ Require a pull request before merging
    - ✅ Require approvals (mínimo 1 — você)
-   - ✅ Do not allow bypassing the above settings (inclui admins, se quiser
-     que a regra valha até pra você)
-   - Isso é o que realmente impede push direto em `main` — mesmo que alguém
-     tenha permissão de escrita no repo, só entra em `main` via PR aprovado.
-     A config do Claude Code (abaixo) é só uma camada extra pro que a IA
-     roda; ela não impede um `git push` manual fora do Claude Code.
+   - ❌ "Do not allow bypassing" **não** marcado — administradores (você)
+     seguem podendo dar push direto em `main`; só colaboradores comuns
+     (o coworker) são obrigados a passar por PR.
+   - Isso é o que realmente impede push direto em `main` pelo coworker —
+     mesmo que ele tenha permissão de escrita no repo, só entra em `main`
+     via PR aprovado. A config do Claude Code (abaixo) é só uma camada
+     extra pro que a IA roda; ela não impede um `git push` manual fora do
+     Claude Code.
 
 ## Passos no computador do coworker
 
@@ -65,6 +67,25 @@ restrições.
    origin main && git merge main` (ou `rebase`) pra manter a branch dele
    atualizada antes do próximo lote de tarefas.
 
+## Colisão de IDs (T#/I#)
+
+Como os dois criam tarefas/incidentes localmente antes de sincronizar, existe
+risco de duplicar um ID (ex: os dois criarem "T148" para itens diferentes).
+Duas camadas de proteção:
+
+1. **Sync antes de criar:** o skill `/registra-incidente` já roda `git fetch
+   + merge` com `main` antes de ler o próximo ID. Reforçar esse hábito
+   também para tarefas novas (não é um skill separado — só `atualiza-tarefa`
+   e `fecha-tarefa` existem, que operam em tarefas já existentes).
+2. **Validação automática:** `sync-tarefas.py` e `sync-landing.py` agora
+   detectam T#/I# duplicado e falham (exit 1) com aviso claro. Isso roda
+   automaticamente via hook a cada edição de `docs/tarefas.md`, e deve ser
+   rodado manualmente (`python scripts/sync-landing.py`) após qualquer
+   edição direta em `docs/incidentes/`. Se aparecer o aviso, renumere o
+   item duplicado manualmente antes de commitar — e o próprio conflito de
+   merge na linha `<!-- próximo ID -->` já costuma sinalizar o problema
+   durante o merge do PR.
+
 ## O que a configuração restringe
 
 - **Modelo travado em Sonnet/Haiku** (`enforceAvailableModels`) — não dá pra
@@ -82,8 +103,9 @@ restrições.
 - **Liberado sem confirmação (allow):** os 6 skills acima, leitura de
   arquivos, edição/criação dentro de `docs/tarefas.md`, `docs/incidentes/`,
   `docs/procedimentos/`, `portal/docs/`, os scripts de sync/relatório, git
-  local (`status`, `diff`, `log`, `add`, `commit`), push restrito à branch
-  `colaborador`, e abertura de PR (`gh pr create` / MCP GitHub).
+  local (`status`, `diff`, `log`, `fetch`, `merge origin/main`, `pull origin
+  main`, `add`, `commit`), push restrito à branch `colaborador`, e abertura
+  de PR (`gh pr create` / MCP GitHub).
 - **Qualquer outra ação** (editar fora dessas pastas, rodar outros comandos)
   cai em `defaultMode: "ask"` — o Claude Code pede confirmação manual antes
   de executar. Isso é uma segunda camada, não um bloqueio duro.

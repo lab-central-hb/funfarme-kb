@@ -8,7 +8,7 @@ Bem-vindo ao portal de conhecimento de TI do Laboratório da **FUNFARME** (Funda
 
 <!-- gerado por scripts/sync-landing.py — não editar manualmente -->
 <!-- BEGIN_STATUS -->
-!!! info "Atualizado em 01/07/2026"
+!!! info "Atualizado em 02/07/2026"
 
     | Indicador | Valor |
     |-----------|-------|

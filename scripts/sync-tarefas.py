@@ -269,6 +269,13 @@ def update_mkdocs_nav(months):
         print(f"  Atualizado: {MKDOCS_YML.name}")
 
 
+def check_duplicate_ids(*task_lists):
+    from collections import Counter
+    ids = [t["task_id"] for lst in task_lists for t in lst if t.get("task_id")]
+    counts = Counter(ids)
+    return sorted(tid for tid, c in counts.items() if c > 1)
+
+
 def main():
     if not TAREFAS_SRC.exists():
         print(f"Erro: {TAREFAS_SRC} não encontrado")
@@ -276,6 +283,8 @@ def main():
 
     text = TAREFAS_SRC.read_text(encoding="utf-8")
     abertas, em_andamento, concluidas = parse_tarefas(text)
+
+    duplicates = check_duplicate_ids(abertas, em_andamento, concluidas)
 
     by_month = defaultdict(list)
     for t in concluidas:
@@ -303,6 +312,11 @@ def main():
 
     total = sum(len(v) for v in by_month.values())
     print(f"\nSync concluído: {len(abertas)} abertas, {len(em_andamento)} em andamento, {total} concluídas em {len(by_month)} meses")
+
+    if duplicates:
+        print(f"\n⚠️  AVISO: ID(s) de tarefa duplicado(s): {', '.join(duplicates)}")
+        print("Renumere um dos itens duplicados em docs/tarefas.md antes de commitar.\n")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

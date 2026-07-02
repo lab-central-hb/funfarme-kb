@@ -183,6 +183,12 @@ def replace_section(content, tag, new_content):
     return pattern.sub(rf"\g<1>{new_content}\n\2", content)
 
 
+def check_duplicate_ids(items):
+    from collections import Counter
+    counts = Counter(i["id"] for i in items if i.get("id"))
+    return sorted(iid for iid, c in counts.items() if c > 1)
+
+
 def main():
     tarefas_text = TAREFAS_SRC.read_text(encoding="utf-8")
     abertas, em_andamento, concluidas_mes = parse_tarefas(tarefas_text)
@@ -190,6 +196,9 @@ def main():
     incidents = []
     if INCIDENTES_SRC.exists():
         incidents = parse_incidentes(INCIDENTES_SRC.read_text(encoding="utf-8"))
+
+    dup_tarefas = check_duplicate_ids(abertas + em_andamento)
+    dup_incidentes = check_duplicate_ids(incidents)
 
     landing = LANDING.read_text(encoding="utf-8")
 
@@ -199,6 +208,14 @@ def main():
 
     LANDING.write_text(landing, encoding="utf-8")
     print(f"Landing page atualizada: {len(abertas)} abertas, {len(em_andamento)} em andamento, {concluidas_mes} concluídas no mês, {len(incidents)} incidentes")
+
+    if dup_tarefas or dup_incidentes:
+        if dup_tarefas:
+            print(f"\n⚠️  AVISO: ID(s) de tarefa duplicado(s): {', '.join(dup_tarefas)}")
+        if dup_incidentes:
+            print(f"⚠️  AVISO: ID(s) de incidente duplicado(s): {', '.join(dup_incidentes)}")
+        print("Renumere o(s) item(ns) duplicado(s) antes de commitar.\n")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
